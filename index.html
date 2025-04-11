@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Felje Menor" />
+    <meta
+      name="copyright"
+      content="Copyright © 2025 Felje Menor. All rights reserved."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Guimaras Specialist Medical Center, Inc. - Providing quality healthcare services in Guimaras."
+    />
+    <title>Guimaras Specialist Medical Center, Inc.</title>
+    <!-- Favicon -->
+    <link
+      href="https://github.com/ejlef/GSMCI/blob/main/Logos/GSMCI%20Logo%20low.png?raw=true"
+      rel="icon"
+    />
+    <link href="css/header&drawer-menu.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body class="animate__animated animate__fadeIn">
+    <header id="header">
+      <div class="logo">
+        <a href="index.html">
+          <img
+            src="https://github.com/ejlef/GSMCI/blob/main/img/logo1.png?raw=true"
+            alt="Guimaras Specialist Medical Center, Inc._Logo"
+            data-src="https://github.com/ejlef/GSMCI/blob/main/img/logo1.png?raw=true"
+            alt="Guimaras Specialist Medical Center, Inc._Logo"
+            class="logo-img lazyload blur-up"
+          />
+        </a>
+      </div>
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <div class="btn-group">
+          <a href="index.html">HOME</a>
+          <a
+            href="#"
+            class="border border-0 dropdown-toggle dropdown-toggle-split"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </a>
+          <ul class="dropdown-menu drp1">
+            <li>
+              <a class="item" href="corp-profile-main.html">CORP. PROFILE</a>
+            </li>
+            <li>
+              <a class="item" href="our-business-main.html">OUR BUSINESS</a>
+            </li>
+            <li>
+              <a class="item" href="board-of-directors-main.html"
+                >BOARD OF DIRECTORS</a
+              >
+            </li>
+            <li>
+              <a class="item" href="organizational-chart-main.html"
+                >ORGANIZATIONAL CHART</a
+              >
+            </li>
+            <li>
+              <a class="item" href="corp-governance-main.html"
+                >CORP. GOVERNANCE</a
+              >
+            </li>
+            <li>
+              <a class="item" href="disclosures-main.html">DISCLOSURES</a>
+            </li>
+            <li>
+              <a class="item" href="investors-and-relations-main.html"
+                >INVESTORS RELATIONS</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- <a href="About-Us.html">ABOUT US</a> -->
+        <a href="services-main.html">SERVICES</a>
+        <a href="directory-main.html">DIRECTORY</a>
+        <div class="btn-group">
+          <a
+            class="dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span>MORE</span>
+          </a>
+          <ul class="dropdown-menu drp1">
+            <li><a class="item" href="contact-us-main.html">CONTACT US</a></li>
+            <li><a class="item" href="career-main.html">CAREER</a></li>
+            <li>
+              <a class="item" href="patient-guide-main.html">PATIENT GUIDE</a>
+            </li>
+            <li>
+              <a class="item" href="news-and-updates-main.html"
+                >NEWS AND UPDATES</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <button class="openbtn lazyload blur-up" onclick="toggleIcon()">
+        <i class="fa fa-bars" aria-hidden="true" id="menuIcon"></i>
+      </button>
+    </header>
+    <!-- Desktab Navigation End -->
+
+    <!-- Mobile Navigation -->
+    <div id="mySidepanel" class="sidepanel">
+      <div class="grp-box">
+        <div class="btn-group">
+          <a href="index.html">HOME</a>
+          <a
+            href="#"
+            type="button"
+            class="border border-0 dropdown-toggle dropdown-toggle bg-transparent"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            data-bs-reference="parent"
+          >
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </a>
+          <ul class="dropdown-menu" id="dropdown-menu1">
+            <li>
+              <a class="item" href="corp-profile-main.html">CORP. PROFILE</a>
+            </li>
+            <li>
+              <a class="item" href="our-business-main.html">OUR BUSINESS</a>
+            </li>
+            <li>
+              <a class="item" href="board-of-directors-main.html"
+                >BOARD OF DIRECTORS</a
+              >
+            </li>
+            <li>
+              <a class="item" href="organizational-chart-main.html"
+                >ORGANIZATIONAL CHART</a
+              >
+            </li>
+            <li>
+              <a class="item" href="corp-governance-main.html"
+                >CORP. GOVERNANCE</a
+              >
+            </li>
+            <li>
+              <a class="item" href="disclosures-main.html">DISCLOSURES</a>
+            </li>
+            <li>
+              <a class="item" href="investors-and-relations-main.html"
+                >INVESTORS RELATIONS</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- <a href="#">ABOUT US</a> -->
+        <a href="services-main.html">SERVICES</a>
+        <a href="directory-main.html">DIRECTORY</a>
+
+        <div class="btn-group">
+          <a
+            href="#"
+            class="border border-0 dropdown-toggle dropdown-toggle bg-transparent"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            data-bs-reference="parent"
+          >
+            <span class="visually-hidden">Toggle Dropdown</span>
+            <span>MORE</span>
+          </a>
+          <ul class="dropdown-menu" id="dropdown-menu1">
+            <li><a class="item" href="contact-us-main.html">CONTACT US</a></li>
+            <li><a class="item" href="career-main.html">CAREER</a></li>
+            <li>
+              <a class="item" href="patient-guide-main.html">PATIENT GUIDE</a>
+            </li>
+            <li>
+              <a class="item" href="news-and-updates-main.html"
+                >NEWS AND UPDATES</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Navigation End -->
+    <br />
+    <!-- Content Section Start-->
+    <div class="content1">
+      <div class="cnt1">
+        <h1>
+          <span class="gm">Guimaras</span>
+          <span class="scl">Specialist</span>
+          <br />
+          <span class="mci">Medical Center, Inc.</span>
+        </h1>
+        <div class="law">
+          A corporation existing and duly organized under the Laws of the
+          Republic of the Philippines with SEC Certificate of Registration
+          <br />
+          No. CS201638661
+        </div>
+        <br />
+        <div>
+          <a href="contact-us-main.html">
+            <button class="i-n">INQUIRE NOW</button>
+          </a>
+        </div>
+      </div>
+      <br />
+      <div class="box-img">
+        <img
+          src="https://xmple.com/wallpaper/linear-blue-white-highlight-gradient-640x480-c2-ffffff-e0ffff-l-50-a-165-f-21.svg"
+          data-src="https://github.com/ejlef/GSMCI/blob/main/img/hospital1.jpg?raw=true"
+          class="img-responsive lazyload blur-up"
+          alt="GSMCI_Hospital_Building"
+        />
+      </div>
+    </div>
+
+    <!-- Content Section end -->
+    <div include-html="line.html"></div>
+    <br />
+    <br />
+
+    <div data-aos="fade-up">
+      <div class="disclosure">
+        <p class="scencm">SECURITIES AND EXCHANGE COMMISSION</p>
+        <h6 class="scfrm">SEC-MSRD Order No, 113</h6>
+      </div>
+      <br /><br />
+      <div class="permit-box">
+        <div>
+          <img
+            src="https://github.com/ejlef/GSMCI/blob/main/Permit/Permit-2.png?raw=true"
+            data-src="https://github.com/ejlef/GSMCI/blob/main/Permit/Permit-2.png?raw=true"
+            alt="Permit"
+            class="img0 image lazyload blur-up"
+          />
+        </div>
+      </div>
+    </div>
+    <br />
+    <br /><br />
+    <div include-html="line.html"></div>
+    <br /><br />
+    <div include-html="corp-profile.html"></div>
+    <br /><br />
+    <br />
+    <div include-html="line.html"></div>
+    <br />
+    <div include-html="our-business.html"></div>
+    <br />
+    <div include-html="line.html"></div>
+    <!-- ORGANIZATIONAL CHART -->
+    <br /><br /><br /><br />
+    <div class="orgbox scrollreveal-orgbox">
+      <img
+        src="https://github.com/ejlef/GSMCI/blob/main/org%20chart/orgchart.png?raw=true"
+        data-src="https://github.com/ejlef/GSMCI/blob/main/org%20chart/orgchart.png?raw=true"
+        class="org-pic lazyload blur-up"
+        alt="Orgchart"
+        loading="lazy"
+      />
+    </div>
+    <br /><br />
+    <br /><br />
+    <!-- ORGANIZATIONAL CHART END -->
+
+    <div include-html="line.html"></div>
+    <br />
+    <div include-html="board-of-directors.html"></div>
+
+    <div include-html="line.html"></div>
+    <br />
+    <div class="promos-box">
+      <h1>Promos</h1>
+    </div>
+    <br />
+    <!-- <div class="promos-img-box">
+      <div class="box-carousel">
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img
+                src="https://img.freepik.com/free-vector/background-empty-room-with-text-coming-soon_1017-5068.jpg?t=st=1743936841~exp=1743940441~hmac=828890328d3fc2787366413b96d1c4f5f519fefdb51823cac94a007098feaa05&w=900"
+                class="carousel-img lazyload blur-up"
+                alt="coming-soon!"
+                loading="lazy"
+              />
+            </div>
+
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="promos-img-box">
+      <div class="box-carousel">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                src="https://img.freepik.com/free-vector/background-empty-room-with-text-coming-soon_1017-5068.jpg?t=st=1743936841~exp=1743940441~hmac=828890328d3fc2787366413b96d1c4f5f519fefdb51823cac94a007098feaa05&w=900"
+                class="d-block w-100 carousel-img"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <!-- <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p> -->
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="https://img.freepik.com/free-vector/background-empty-room-with-text-coming-soon_1017-5068.jpg?t=st=1743936841~exp=1743940441~hmac=828890328d3fc2787366413b96d1c4f5f519fefdb51823cac94a007098feaa05&w=900"
+                class="d-block w-100 carousel-img"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <!-- <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p> -->
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://img.freepik.com/free-vector/background-empty-room-with-text-coming-soon_1017-5068.jpg?t=st=1743936841~exp=1743940441~hmac=828890328d3fc2787366413b96d1c4f5f519fefdb51823cac94a007098feaa05&w=900"
+                class="d-block w-100 carousel-img"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <!-- <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="promos-pic">
+      <img
+        src="https://github.com/ejlef/GSMCI/blob/main/Promos/449512504_487301377156882_2993390706482807856_n.jpg?raw=true"
+        alt="Pheumonia"
+        class="img1 lazyload blur-up"
+        loading="lazy"
+      />
+      <img
+        src="https://github.com/ejlef/GSMCI/blob/main/Promos/Brown%20Monochrome%20Simple%20Minimalist%20Mobile-First%20Presentation%20(4).jpg?raw=true"
+        alt="Fathers Day Promos 2024."
+        class="img1 lazyload blur-up"
+        loading="lazy"
+      />
+    </div>
+    <br />
+
+    <div include-html="HMO-s Partners.html"></div>
+    <!-- Footer Section -->
+    <div include-html="footer.html"></div>
+
+    <!-- script js -->
+    <script src="js/header&drawer-menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
+      async
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      //  AOS.init();
+      AOS.init({
+        offset: 250, // Distance to trigger animation (px)
+        duration: 800, // Animation duration (ms)
+        easing: "ease-in-out", // Easing function
+        delay: 100, // Delay before animation starts (ms)
+      });
+
+      const images = document.querySelectorAll(".image");
+      images.forEach((img) => {
+        img.onload = function () {
+          img.classList.add("loaded");
+        };
+
+        img.onerror = function () {
+          console.error("Failed to load image");
+        };
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const content1 = document.querySelector(".content1");
+        const img = new Image();
+        img.src =
+          "https://github.com/ejlef/GSMCI/blob/main/img/gsmci-bg1.png?raw=true";
+        img.onload = () => {
+          // Apply the loaded class to show the image
+          content1.classList.add("loaded");
+        };
+        img.onerror = () => {
+          console.error("Image failed to load");
+          // Keep the black background if the image doesn't load
+          content1.classList.remove("loaded");
+        };
+      });
+
+      // Import .html
+      (async function () {
+        const elements = document.querySelectorAll("[include-html]");
+        for (const el of elements) {
+          const file = el.getAttribute("include-html");
+          try {
+            const response = await fetch(file);
+            if (response.ok) {
+              const text = await response.text();
+              el.innerHTML = text;
+
+              // Execute scripts within the injected content
+              const scripts = el.querySelectorAll("script");
+              scripts.forEach((script) => {
+                const newScript = document.createElement("script");
+                if (script.src) {
+                  newScript.src = script.src;
+                  newScript.async = false;
+                } else {
+                  newScript.text = script.textContent;
+                }
+                document.body.appendChild(newScript);
+              });
+            } else {
+              el.innerHTML = "Content Not Found.";
+            }
+          } catch (error) {
+            console.error("Error Including HTML:", error);
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>

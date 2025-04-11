@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "AppleGaramond-Bold";
+  src: url("../apple_garamond-font/AppleGaramond-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+.first-services {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.holder-services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  width: 100%;
+  padding: 3%;
+}
+
+.serbox-1 {
+  height: auto;
+  padding: 2rem;
+  border: 1px solid gray;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.sercap {
+  font-size: 1.25rem;
+  font-weight: bold;
+  background: darkgreen;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.rsvsc {
+  font-family: "AppleGaramond-Bold";
+  font-size: 4vw;
+  font-weight: bold;
+  text-align: center;
+  color: darkgreen;
+  margin: 0;
+}
+
+.lsevrydpt {
+  font-size: 20px;
+  color: darkgreen;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+@media (max-width: 769px) {
+  .rsvsc {
+    font-size: 8vw;
+  }
+}
+
+@media (max-width: 426px) {
+  .rsvsc {
+    font-size: 8vw;
+  }
+}
+
+@media (max-width: 376px) {
+  .rsvsc {
+    font-size: 8vw;
+  }
+}
+
+@media (max-width: 321px) {
+  .rsvsc {
+    font-size: 8vw;
+  }
+  .lsevrydpt {
+    font-size: 5vw;
+  }
+}

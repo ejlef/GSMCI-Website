@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "AppleGaramond-Bold";
+  src: url("../apple_garamond-font/AppleGaramond-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+.our-business {
+  text-align: center;
+}
+
+.our-business h1 {
+  font-family: "AppleGaramond-Bold";
+  color: darkgreen;
+  margin: 0%;
+  padding: 0%;
+}
+
+.content-business {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-business p {
+  font-family: "Roboto", serif;
+  font-size: 1.2em;
+  hyphens: auto;
+  line-height: 2;
+  padding: 0 10%;
+  margin: 0%;
+}
+
+.content-business p span {
+  color: darkviolet;
+}
+
+.services1 span {
+  font-weight: bold;
+  color: black;
+}
+
+@media (max-width: 769px) {
+  .content-business p {
+    text-align: left;
+    padding: 0 1% 0 4%;
+    font-size: 1.3em;
+  }
+  .our-business h1 {
+    font-size: 3.5em;
+  }
+}
+@media (max-width: 426px) {
+  .content-business p {
+    text-align: left;
+    padding: 0 1% 0 4%;
+    font-size: 1.2em;
+  }
+  .our-business h1 {
+    font-size: 3em;
+  }
+}
+@media (max-width: 376px) {
+  .content-business p {
+    text-align: left;
+    padding: 0 1% 0 4%;
+    font-size: 1.1em;
+  }
+  .our-business h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 321px) {
+  .content-business p {
+    text-align: left;
+    padding: 0 1% 0 4%;
+    font-size: 1em;
+  }
+  .our-business h1 {
+    font-size: 2em;
+  }
+}

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Felje Menor" />
+    <meta
+      name="copyright"
+      content="Copyright © 2025 Felje Menor. All rights reserved."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Guimaras Specialist Medical Center, Inc. - Providing quality healthcare services in Guimaras."
+    />
+    <title>HMO Partners</title>
+    <style>
+      .partners {
+        font-family: "AppleGaramond-Bold";
+        font-size: 3em;
+        color: darkgreen;
+        margin: 20px 0;
+        text-align: center;
+      }
+
+      .img-rpnsv {
+        position: relative;
+        padding: 2%;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+      }
+
+      .mySlides {
+        display: none;
+        width: 80%;
+        height: 60vh;
+        object-fit: contain;
+      }
+
+      .active {
+        display: block;
+      }
+
+      .w3-content {
+        text-align: center;
+        padding-bottom: 100px;
+      }
+
+      .w3-section {
+        margin-top: 20px;
+      }
+
+      .w3-row-padding {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .w3-col {
+        flex: 1 1 150px;
+        max-width: 150px;
+        padding: 5px;
+      }
+
+      .demo {
+        width: 100%;
+        max-width: 150px;
+        opacity: 0.6;
+        cursor: pointer;
+        transition: opacity 0.3s ease;
+      }
+
+      .demo:hover,
+      .w3-opacity-off {
+        opacity: 1;
+      }
+
+      @media (max-width: 769px) {
+        .partners {
+          font-size: 2.5em;
+        }
+
+        .img-rpnsv {
+          height: auto;
+        }
+
+        .w3-col {
+          max-width: 120px;
+        }
+      }
+
+      @media (max-width: 426px) {
+        .partners {
+          font-size: 2em;
+        }
+
+        .img-rpnsv {
+          height: auto;
+        }
+
+        .w3-col {
+          max-width: 100px;
+        }
+      }
+
+      @media (max-width: 321px) {
+        .partners {
+          font-size: 1.5em;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="w3-content">
+      <h1 class="partners">HMO's Partners</h1>
+
+      <div class="img-rpnsv">
+        <img
+          class="mySlides active"
+          src="https://github.com/ejlef/GSMCI/blob/main/HMO/0002555_icare_logo1.png?raw=true"
+          alt="Partner 1"
+          loading="lazy"
+        />
+        <img
+          class="mySlides"
+          src="https://github.com/ejlef/GSMCI/blob/main/HMO/6540e9306b4ce4a6d2ee1b52_PC%20Logo.png?raw=true"
+          alt="Partner 2"
+          loading="lazy"
+        />
+        <img
+          class="mySlides"
+          src="https://github.com/ejlef/GSMCI/blob/main/HMO/Cocolife-New-Logo-ONE-LINE-with-outline-1536x365.png?raw=true"
+          alt="Partner 3"
+          loading="lazy"
+        />
+        <img
+          class="mySlides"
+          src="https://github.com/ejlef/GSMCI/blob/main/HMO/INTELLICARE.png?raw=true"
+          alt="Partner 4"
+          loading="lazy"
+        />
+        <img
+          class="mySlides"
+          src="https://github.com/ejlef/GSMCI/blob/main/HMO/_NFrS9Va_400x400.png?raw=true"
+          alt="Partner 5"
+          loading="lazy"
+        />
+        <img
+          class="mySlides"
+          src="https://github.com/ejlef/GSMCI/blob/main/HMO/logo-horizontal.png?raw=true"
+          alt="Partner 6"
+          loading="lazy"
+        />
+        <img
+          class="mySlides"
+          src="https://github.com/ejlef/GSMCI/blob/main/HMO/logo.png?raw=true"
+          alt="Partner 7"
+          loading="lazy"
+        />
+        <img
+          class="mySlides"
+          src="https://github.com/ejlef/GSMCI/blob/main/HMO/unnamed.png?raw=true"
+          alt="Partner 8"
+          loading="lazy"
+        />
+      </div>
+
+      <div class="w3-section">
+        <div class="w3-row-padding">
+          <div class="w3-col">
+            <img
+              class="demo"
+              src="https://github.com/ejlef/GSMCI/blob/main/HMO/0002555_icare_logo1.png?raw=true"
+              onclick="currentSlide(1)"
+            />
+          </div>
+          <div class="w3-col">
+            <img
+              class="demo"
+              src="https://github.com/ejlef/GSMCI/blob/main/HMO/6540e9306b4ce4a6d2ee1b52_PC%20Logo.png?raw=true"
+              onclick="currentSlide(2)"
+            />
+          </div>
+          <div class="w3-col">
+            <img
+              class="demo"
+              src="https://github.com/ejlef/GSMCI/blob/main/HMO/Cocolife-New-Logo-ONE-LINE-with-outline-1536x365.png?raw=true"
+              onclick="currentSlide(3)"
+            />
+          </div>
+          <div class="w3-col">
+            <img
+              class="demo"
+              src="https://github.com/ejlef/GSMCI/blob/main/HMO/INTELLICARE.png?raw=true"
+              onclick="currentSlide(4)"
+            />
+          </div>
+          <div class="w3-col">
+            <img
+              class="demo"
+              src="https://github.com/ejlef/GSMCI/blob/main/HMO/_NFrS9Va_400x400.png?raw=true"
+              onclick="currentSlide(5)"
+            />
+          </div>
+          <div class="w3-col">
+            <img
+              class="demo"
+              src="https://github.com/ejlef/GSMCI/blob/main/HMO/logo-horizontal.png?raw=true"
+              onclick="currentSlide(6)"
+            />
+          </div>
+          <div class="w3-col">
+            <img
+              class="demo"
+              src="https://github.com/ejlef/GSMCI/blob/main/HMO/logo.png?raw=true"
+              onclick="currentSlide(7)"
+            />
+          </div>
+          <div class="w3-col">
+            <img
+              class="demo"
+              src="https://github.com/ejlef/GSMCI/blob/main/HMO/unnamed.png?raw=true"
+              onclick="currentSlide(8)"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let slides = document.querySelectorAll(".mySlides");
+        slides.forEach((slide) => slide.classList.remove("active"));
+        slides[n - 1].classList.add("active");
+      }
+
+      function autoPlaySlides() {
+        slideIndex++;
+        if (slideIndex > document.querySelectorAll(".mySlides").length) {
+          slideIndex = 1;
+        }
+        showSlides(slideIndex);
+        setTimeout(autoPlaySlides, 3000);
+      }
+
+      autoPlaySlides();
+    </script>
+  </body>
+</html>
