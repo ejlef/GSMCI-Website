@@ -35,16 +35,17 @@ header {
   pointer-events: none;
 }
 
-.logo a {
-  text-decoration: none;
-}
 .logo {
   width: 20%;
   height: 100%;
 }
+
+.logo a {
+  text-decoration: none;
+}
+
 .logo-img {
   width: 100%;
-  transition: width 0.3s ease;
 }
 
 nav.desktop-nav {
@@ -196,6 +197,10 @@ nav.desktop-nav a {
 }
 
 @media (max-width: 769px) {
+  .logo {
+    width: 55%;
+  }
+
   nav.desktop-nav {
     display: none;
   }
@@ -206,16 +211,12 @@ nav.desktop-nav a {
     margin: 0% !important;
   }
 
-  .logo {
-    width: 30%;
-  }
-
   header {
     padding: 1.1rem 2.5rem;
   }
   .openbtn {
     display: block;
-    font-size: 2.5em;
+    font-size: 8vw;
   }
   .sidepanel a {
     font-size: 6vw;
@@ -223,47 +224,19 @@ nav.desktop-nav a {
 }
 
 @media (max-width: 426px) {
-  .logo {
-    width: 45%;
-  }
   header {
     padding: 1rem 1.5rem;
-  }
-  .openbtn {
-    display: block;
-    font-size: 2em;
   }
   .sidepanel a {
     font-size: 6vw;
   }
 }
 @media (max-width: 376px) {
-  .logo {
-    width: 50%;
-  }
-  header {
-    padding: 0.8rem 1.5rem;
-  }
-  .openbtn {
-    display: block;
-    font-size: 2em;
-  }
   .sidepanel a {
     font-size: 6vw;
   }
 }
 @media (max-width: 321px) {
-  .logo {
-    width: 50%;
-  }
-  header {
-    padding: 0.5rem 1.5rem;
-  }
-  .openbtn {
-    display: block;
-    font-size: 1.5em;
-  }
-
   .sidepanel a {
     font-size: 6vw;
   }

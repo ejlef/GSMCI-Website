@@ -19,6 +19,7 @@ function toggleIcon() {
 
 let lastScrollTop = 0;
 const header = document.getElementById("header");
+const zminuot = document.getElementById("zoom-in_out");
 
 window.addEventListener("scroll", () => {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -26,7 +27,10 @@ window.addEventListener("scroll", () => {
   if (scrollTop === 0) {
     // At the top of the page
     header.style.position = "static";
+    zminuot.style.transform = "scale(1)";
+    zminuot.style.transition = "transform 1.3s ease";
     header.style.boxShadow = "none";
+    header.style.backgroundColor = "transparent";
     header.classList.remove("hidden");
   } else if (scrollTop > lastScrollTop) {
     // Scrolling down
@@ -36,7 +40,9 @@ window.addEventListener("scroll", () => {
     // Scrolling up
     header.style.position = "sticky";
     header.style.top = "0";
-    header.style.backgroundColor = "white";
+    zminuot.style.transform = "scale(1.1)";
+    zminuot.style.transition = "none";
+    header.style.backgroundColor = "whitesmoke";
     header.style.boxShadow = "0px 2px 5px  rgba(0, 0, 0, 0.3)";
     header.classList.remove("hidden");
   }

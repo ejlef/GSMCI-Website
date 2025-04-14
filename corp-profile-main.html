@@ -14,10 +14,10 @@
     />
     <title>Corp. Profile</title>
       <!-- Favicon -->
-    <link
-    href="https://github.com/ejlef/GSMCI/blob/main/Logos/GSMCI%20Logo%20low.png?raw=true"
-    rel="icon"
-  />
+      <link
+      href="https://raw.githubusercontent.com/ejlef/GSMCI-Pictures/refs/heads/main/Logos/GSMCI%20Logo%20low.ico"
+      rel="icon"
+    />
   <link href="css/header&drawer-menu.css" rel="stylesheet" />
   <link href="css/corp-profile-main.css" rel="stylesheet" />
   <link
@@ -37,24 +37,24 @@
   </head>
   <body class="animate__animated animate__fadeIn">
     <header id="header">
-      <div class="logo">
-        <!-- Logo -->
+      <!-- Logo -->
+      <div class="logo" id="zoom-in_out">
         <a href="index.html">
           <img
             src="https://github.com/ejlef/GSMCI/blob/main/img/logo1.png?raw=true"
-            alt="Guimaras Specialist Medical Center, Inc._Logo"
+            data-src="https://github.com/ejlef/GSMCI/blob/main/img/logo1.png?raw=true"
             class="logo-img lazyload blur-up"
+            alt="Guimaras Specialist Medical Center, Inc._Logo"
+            loading="eager"
           />
         </a>
       </div>
-
-      <!-- Desktop navigation -->
+      <!-- Desktop Navigation -->
       <nav class="desktop-nav">
-        <!-- Example split danger button -->
         <div class="btn-group">
           <a href="index.html">HOME</a>
-
           <a
+            href="#"
             class="border border-0 dropdown-toggle dropdown-toggle-split"
             data-bs-toggle="dropdown"
             aria-expanded="false"
@@ -122,18 +122,11 @@
       <button class="openbtn" onclick="toggleIcon()">
         <i class="fa fa-bars" aria-hidden="true" id="menuIcon"></i>
       </button>
-      <!-- <button class="openbtn" onclick="openNav()">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-      </button> -->
     </header>
-    <!-- Desktab End -->
+    <!-- Desktab Navigation End -->
 
-    <!-- Mobile Nav -->
+    <!-- Mobile Navigation -->
     <div id="mySidepanel" class="sidepanel">
-      <!-- <button class="closebtn" onclick="closeNav()">
-        <i class="fa fa-times" aria-hidden="true"></i>
-      </button> -->
-
       <div class="grp-box">
         <div class="btn-group">
           <a href="index.html">HOME</a>
@@ -209,8 +202,7 @@
         </div>
       </div>
     </div>
-    <!-- Mobile Nav End -->
-
+    <!-- Mobile Navigation End -->
 <br />
     <div class="about-us">
       <h1>ABOUT US</h1>

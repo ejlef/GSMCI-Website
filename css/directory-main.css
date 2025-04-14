@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "AppleGaramond-Bold";
+  src: url("../apple_garamond-font/AppleGaramond-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+.content-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.drtry,
+.dctrclnc,
+.text-doc {
+  font-family: "AppleGaramond-Bold";
+  color: darkgreen;
+}
+
+.wrds,
+.drtry,
+.doc-label,
+.dctrclnc,
+.doccap,
+.text-doc {
+  margin-bottom: 0%;
+}
+
+.wrds {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.3em;
+}
+
+.drtry {
+  font-size: 4vw;
+}
+
+.dctrclnc {
+  margin-top: 5%;
+  text-align: center;
+  font-size: 3.5vw;
+}
+
+.d-holder {
+  margin: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5em;
+  font-family: "Roboto", sans-serif;
+}
+
+.d-holder,
+.doc-label {
+  font-family: "Roboto", sans-serif;
+}
+
+.text-doc {
+  font-size: 3.5vw;
+}
+
+.content-2 {
+  margin-bottom: 10%;
+}
+
+.first-doctor {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.doc-label {
+  font-size: 1.2em;
+}
+
+.docbox-1 img {
+  max-height: 240px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.docbox-1 {
+  height: 370px;
+  width: 300px;
+  background: whitesmoke;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    border 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.docbox-1:hover {
+  transform: scale(1.1);
+  border: 3px solid darkgreen;
+}
+
+.doccap {
+  font-size: 1em;
+  font-weight: bold;
+  padding: 10px;
+  font-weight: bold;
+  color: green;
+}
+
+.img {
+  height: auto;
+  width: 100%;
+  max-width: 380px;
+  max-height: 380px;
+  border: 2px solid darkgreen;
+}
+
+.holder-doctor {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 769px) {
+  .drtry,
+  .dctrclnc,
+  .text-doc {
+    font-size: 8vw;
+  }
+
+  .wrds {
+    font-size: 1em;
+  }
+
+  .box2 {
+    padding: 5%;
+  }
+}

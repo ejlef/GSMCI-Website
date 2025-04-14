@@ -96,7 +96,7 @@
       }
 
       .footer-branding img {
-        max-width: 150px;
+        max-width: 160px;
         height: auto;
       }
 
@@ -113,8 +113,14 @@
         margin-top: 10px;
       }
 
-      /* Media Queries for Different Devices */
-      @media (max-width: 767px) {
+      /* Large Devices */
+      @media (min-width: 769px) {
+        .footer-section {
+          flex: 1;
+        }
+      }
+
+      @media (max-width: 426px) {
         .footer-container {
           flex-direction: column;
           text-align: center;
@@ -132,17 +138,7 @@
         .footer-branding {
           margin-top: 20px;
         }
-      }
 
-      /* Large Devices */
-      @media (min-width: 768px) {
-        .footer-section {
-          flex: 1;
-        }
-      }
-
-      /* Extra Small Devices (Mobile Portrait) */
-      @media (max-width: 480px) {
         .site-footer {
           padding: 20px;
         }
@@ -166,6 +162,10 @@
         .social-links li a img {
           width: 18px;
           height: 18px;
+        }
+
+        .footer-branding img {
+          max-width: 120px;
         }
       }
     </style>
@@ -270,7 +270,7 @@
       <div class="footer-branding">
         <a href="https://gsmci.com/" aria-label="GSMCI Website">
           <img
-            src="https://github.com/ejlef/GSMCI/blob/main/Logos/GSMCI%20Logo%20low.png?raw=true"
+            src="https://github.com/ejlef/GSMCI-Pictures/blob/main/Logos/GSMCI%20Logo%20low.png?raw=true"
             alt="Guimaras Specialist Medical Center Inc."
           />
         </a>

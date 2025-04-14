@@ -42,6 +42,10 @@
 }
 
 .box-vmgc {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
   background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 8px;

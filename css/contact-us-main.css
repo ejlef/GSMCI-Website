@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "AppleGaramond-Bold";
+  src: url("../apple_garamond-font/AppleGaramond-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+.cnctus-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 0 10% 0;
+  gap: 2rem;
+}
+
+.box-10 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1 1 300px;
+  padding: 5%;
+}
+
+.box-10 iframe {
+  box-shadow: 0px 1.5px 4px #6e6e6e;
+}
+
+.box-10 i {
+  font-size: 1.5em;
+  color: #000;
+}
+
+.box-10 p {
+  font-size: 1em;
+  color: black;
+}
+
+iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  padding: 1%;
+}
+
+.fas.fa-map-marker-alt {
+  color: red;
+  margin-right: 10px;
+  font-size: 4em;
+}
+
+.gm {
+  color: green;
+  font-family: "AppleGaramond-Bold";
+  font-size: 5vw;
+  line-height: 80%;
+}
+
+.scl {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.scl span {
+  color: darkviolet;
+}
+
+.nt {
+  line-height: 1.5;
+  width: 80%;
+  max-width: 500px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* blur img effect */
+.blur-up {
+  filter: blur(20px);
+  transition: filter 0.3s ease-out;
+  will-change: filter;
+}
+
+.lazyloaded {
+  filter: blur(0);
+}
+
+/* blur img effect end */
+
+@media (max-width: 769px) {
+  .cnctus-box {
+    flex-direction: column;
+  }
+
+  .gm {
+    font-size: 8vw;
+  }
+
+  .scl {
+    font-size: 1.2em;
+  }
+
+  .fas.fa-map-marker-alt {
+    font-size: 2.5em;
+  }
+
+  .nt {
+    width: 90%;
+  }
+  .box-10 iframe {
+    box-shadow: 0px 1.5px 4px #6e6e6e;
+  }
+}
+
+@media (max-width: 480px) {
+  .scl {
+    font-size: 1em;
+  }
+
+  .fas.fa-map-marker-alt {
+    font-size: 2em;
+  }
+
+  .nt {
+    width: 100%;
+  }
+  .box-10 iframe {
+    box-shadow: 0px 1.5px 4px #6e6e6e;
+  }
+}
