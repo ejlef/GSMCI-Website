@@ -5,85 +5,40 @@
   src: url("../apple_garamond-font/AppleGaramond-Bold.ttf") format("truetype");
   font-weight: bold;
 }
-.corpbox {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 0 3% 3% 3%;
-}
-.gsmcitext {
-  font-family: "Roboto";
-  font-size: 2vw;
-}
 
 .board-of-directors {
+  margin: 5%;
   text-align: center;
 }
 
 .board-of-directors h1 {
   font-family: "AppleGaramond-Bold";
   color: darkgreen;
-  font-size: 3.5vw;
   padding: 0%;
   margin: 0%;
-}
-
-.box-bod {
-  padding: 2% 0 0 5%;
-}
-
-.box-bod p {
-  margin-bottom: 0.3rem;
-}
-
-.dtr-p {
-  font-size: 2vw;
-}
-
-.doctor-name {
-  font-weight: bolder;
-}
-
-.ligt1 {
-  font-weight: lighter;
-}
-
-.img-box1 {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-}
-
-.imgdrctrs-box img {
-  width: 100%;
-  max-height: 500px;
-  box-shadow: 3px 3px 3px #ccc;
 }
 
 .brdofdrk-box1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   padding: 2%;
 }
 
 .box-img1 img {
-  width: 100%;
+  width: 70%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.35);
-  margin: 1%;
+  /* margin: 1%; */
+  padding: 0.5%;
 }
 
 .brdofdrk-box1 div {
   display: flex;
   flex-direction: column;
   flex: 300px;
-  align-items: center;
-  padding: 1%;
+  padding: 4%;
 }
 
 .name1 {
@@ -101,12 +56,12 @@
 .name1,
 .title1 {
   font-family: "AppleGaramond-Bold";
-  text-align: center;
+  text-align: left;
 }
 
 .details1 {
   font-family: "Roboto";
-  font-size: 1em;
+  font-size: 1.5em;
   line-height: 1.6;
   text-align: left;
   padding: 2.5% 0 0 3%;
@@ -127,7 +82,33 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 2561px) {
+  .details1 {
+    font-size: 1.3em;
+  }
+  .box-img1 img {
+    width: 75%;
+  }
+}
+
+@media (max-width: 1441px) {
+  .details1 {
+    font-size: 1.2em;
+  }
+  .box-img1 img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1025px) {
+  .details1 {
+    font-size: 1em;
+  }
+  .box-img1 img {
+    width: 100%;
+  }
+}
+@media (max-width: 769px) {
   .hdi1 {
     display: block !important;
   }
@@ -136,20 +117,8 @@
     display: none !important;
   }
 
-  .board-of-directors h1 {
-    font-size: 8vw;
-  }
-
-  .gsmcitext {
-    font-size: 4vw;
-  }
-
-  .dtr-p {
-    font-size: 3.5vw;
-  }
-
-  .corpbox {
-    flex-direction: column;
+  .brdofdrk-box1 div {
+    padding: 2.5%;
   }
 
   .name1 {
@@ -157,141 +126,42 @@
   }
 
   .title1 {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 
-  .details1 {
+  .details1 p {
     font-size: 1em;
     text-align: left;
   }
 
-  .imgdrctrs-box img {
-    height: auto;
+  .board-of-directors h1 {
+    font-size: 3em;
   }
 }
 
 @media (max-width: 426px) {
-  .hdi1 {
-    display: block !important;
-  }
-
-  .hdi2 {
-    display: none !important;
-  }
-
   .board-of-directors h1 {
     font-size: 8vw;
   }
 
-  .gsmcitext {
-    font-size: 4vw;
-  }
-
-  .dtr-p {
-    font-size: 3.5vw;
-  }
-
-  .corpbox {
-    flex-direction: column;
+  .brdofdrk-box1 {
+    padding: 10% 5% 10% 5%;
   }
 
   .name1 {
-    font-size: 1.4em;
+    font-size: 6.5vw;
   }
 
   .title1 {
-    font-size: 1em;
-  }
-
-  .details1 {
-    font-size: 1em;
-    text-align: left;
-  }
-
-  .imgdrctrs-box img {
-    height: auto;
-  }
-}
-@media (max-width: 376px) {
-  .hdi1 {
-    display: block !important;
-  }
-  .hdi2 {
-    display: none !important;
-  }
-
-  .board-of-directors h1 {
-    font-size: 8vw;
-  }
-
-  .gsmcitext {
     font-size: 4vw;
   }
 
-  .dtr-p {
-    font-size: 3.5vw;
-  }
-
-  .corpbox {
-    flex-direction: column;
-  }
-
-  .name1 {
-    font-size: 1.3em;
-  }
-
+  .name1,
   .title1 {
-    font-size: 0.9em;
+    text-align: center;
   }
 
   .details1 p {
-    font-size: 0.9em;
-    text-align: left;
-  }
-
-  .imgdrctrs-box img {
-    height: auto;
-  }
-}
-@media (max-width: 321px) {
-  .hdi1 {
-    display: block !important;
-  }
-
-  .hdi2 {
-    display: none !important;
-  }
-
-  .board-of-directors h1 {
-    font-size: 8vw;
-  }
-
-  .gsmcitext {
     font-size: 4vw;
-  }
-
-  .dtr-p {
-    font-size: 3.5vw;
-  }
-
-  .corpbox {
-    flex-direction: column;
-  }
-
-  .name1 {
-    font-size: 1.2em;
-  }
-
-  .title1 {
-    font-size: 0.8em;
-  }
-
-  .details1 p {
-    font-size: 0.8em;
-    text-align: left;
-  }
-
-  .imgdrctrs-box img {
-    height: auto;
   }
 }

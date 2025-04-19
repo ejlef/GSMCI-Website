@@ -6,101 +6,64 @@
   font-weight: bold;
 }
 
-.corp-governance {
-  margin: 5%;
+.disclosure-h1 {
+  margin-top: 3%;
+  margin-bottom: 3%;
   text-align: center;
 }
 
-.corpbox {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 0 3% 3% 3%;
-}
-.gsmcitext {
-  font-family: "Roboto";
-  font-size: 2vw;
-}
-
-.corp-governance h1 {
-  font-family: "AppleGaramond-Bold";
+.disclosure-h1 h1 {
   color: darkgreen;
-  font-size: 3.5vw;
-  padding: 0%;
-  margin: 0%;
+  font-family: "AppleGaramond-Bold";
 }
 
-.box-cg {
-  padding: 2% 0 0 5%;
-}
-
-.box-cg p {
-  margin-bottom: 0.3rem;
-}
-
-.dtr-p {
-  font-size: 2vw;
-}
-
-.doctor-name {
-  font-weight: bolder;
-}
-
-.ligt1 {
-  font-weight: lighter;
-}
-
-.img-box1 {
+.permit-box {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
   justify-content: center;
-}
-
-.imgdrctrs-box img {
   width: 100%;
-  box-shadow: 3px 3px 3px #ccc;
 }
 
-.brdofdrk-box1 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 2%;
-}
-
-.manual-section p {
+.disclosure .scencm {
   display: flex;
   flex-direction: row;
   justify-content: center;
   font-size: 2em;
-  color: darkgreen;
-  font-weight: bold;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin-bottom: 1.5%;
-  text-align: center;
+  color: green;
+  font-family: "Roboto";
 }
 
-.manual-pic {
+.disclosure-pic {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   width: 100%;
-  height: auto;
+  padding: 5%;
   margin-bottom: 3%;
   overflow-x: auto;
   scroll-behavior: smooth;
-  white-space: nowrap;
-  padding: 5%;
+  /* white-space: nowrap; */
   gap: 10%;
+}
+
+.img0 {
+  max-width: 90vw;
+  max-height: 400px;
+  padding: 1%;
+  margin: 0.5%;
+  border: solid 2px darkgreen;
 }
 
 .img1 {
   width: 100%;
   padding: 1%;
   border: solid 2px darkgreen;
+}
+
+.scfrm {
+  font-family: "Roboto";
+  font-size: 1em;
+  text-align: center;
+  margin: 5%;
 }
 
 /* blur img effect */
@@ -113,11 +76,8 @@
 .lazyloaded {
   filter: blur(0);
 }
-/* blur img effect end */
 
-.manual-pic img {
-  cursor: pointer;
-}
+/* blur img effect end */
 
 /* The Modal (background) Start */
 .no-scroll {
@@ -143,7 +103,7 @@
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
+  width: 95%;
   max-width: 700px;
 }
 
@@ -198,8 +158,9 @@
 .next {
   cursor: pointer;
   position: absolute;
-  top: 60%;
+  top: 50%;
   width: auto;
+  /* margin-top: -22px; */
   padding: 20px;
   color: white;
   font-weight: bold;
@@ -220,7 +181,6 @@
 .next {
   right: 10%;
 }
-/* Modal Content (image) End */
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -228,103 +188,27 @@
   .next {
     display: none;
   }
+}
 
-  .corp-governance h1 {
-    font-size: 8vw;
-  }
+.disclosure-pic img {
+  cursor: pointer;
+}
 
-  .gsmcitext {
-    font-size: 4vw;
-  }
-
-  .dtr-p {
+@media (max-width: 480px) {
+  .scfrm {
     font-size: 3.5vw;
   }
 
-  .corpbox {
-    flex-direction: column;
+  .disclosure-h1 h1 {
+    font-size: 8vw;
   }
 
-  .imgdrctrs-box img {
-    height: auto;
-  }
-}
-
-@media (max-width: 426px) {
   .prev,
   .next {
     display: none;
   }
 
-  .corp-governance h1 {
-    font-size: 8vw;
-  }
-
-  .gsmcitext {
-    font-size: 4vw;
-  }
-
-  .dtr-p {
-    font-size: 3.5vw;
-  }
-
-  .corpbox {
-    flex-direction: column;
-  }
-
-  .imgdrctrs-box img {
-    height: auto;
-  }
-}
-@media (max-width: 376px) {
-  .prev,
-  .next {
-    display: none;
-  }
-
-  .corp-governance h1 {
-    font-size: 8vw;
-  }
-
-  .gsmcitext {
-    font-size: 4vw;
-  }
-
-  .dtr-p {
-    font-size: 3.5vw;
-  }
-
-  .corpbox {
-    flex-direction: column;
-  }
-
-  .imgdrctrs-box img {
-    height: auto;
-  }
-}
-@media (max-width: 321px) {
-  .prev,
-  .next {
-    display: none;
-  }
-
-  .corp-governance h1 {
-    font-size: 8vw;
-  }
-
-  .gsmcitext {
-    font-size: 4vw;
-  }
-
-  .dtr-p {
-    font-size: 3.5vw;
-  }
-
-  .corpbox {
-    flex-direction: column;
-  }
-
-  .imgdrctrs-box img {
-    height: auto;
+  .disclosure .scencm {
+    font-size: 1em;
   }
 }

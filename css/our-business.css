@@ -1,4 +1,5 @@
 .our-business {
+  margin: 5%;
   text-align: center;
 }
 
@@ -36,41 +37,21 @@
 @media (max-width: 769px) {
   .content-business p {
     text-align: left;
-    padding: 0 1% 0 4%;
+    padding: 0 3% 0 6%;
     font-size: 1.3em;
   }
   .our-business h1 {
     font-size: 3.5em;
   }
 }
-@media (max-width: 426px) {
-  .content-business p {
-    text-align: left;
-    padding: 0 1% 0 4%;
-    font-size: 1.2em;
-  }
-  .our-business h1 {
-    font-size: 3em;
-  }
-}
-@media (max-width: 376px) {
-  .content-business p {
-    text-align: left;
-    padding: 0 1% 0 4%;
-    font-size: 1.1em;
-  }
-  .our-business h1 {
-    font-size: 2.5em;
-  }
-}
 
-@media (max-width: 321px) {
-  .content-business p {
-    text-align: left;
-    padding: 0 1% 0 4%;
-    font-size: 1em;
-  }
+@media (max-width: 426px) {
   .our-business h1 {
-    font-size: 2em;
+    font-size: 8vw;
+  }
+
+  .content-business p {
+    padding: 0.5vh 5vw 5vh 6.5vw;
+    font-size: 4vw;
   }
 }

@@ -15,9 +15,9 @@
     <title>Investors and Relations</title>
     <!-- Favicon -->
     <link
-    href="https://raw.githubusercontent.com/ejlef/GSMCI-Pictures/refs/heads/main/Logos/GSMCI%20Logo%20low.ico"
-    rel="icon"
-  />
+      href="https://raw.githubusercontent.com/ejlef/GSMCI-Pictures/refs/heads/main/Logos/GSMCI%20Logo%20low.ico"
+      rel="icon"
+    />
     <link href="css/header&drawer-menu.css" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -34,26 +34,33 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <style>
+      @font-face {
+        font-family: "AppleGaramond-Bold";
+        src: url("apple_garamond-font/AppleGaramond-Bold.ttf")
+          format("truetype");
+        font-weight: bold;
+      }
       .p1 {
+        font-family: "AppleGaramond-Bold";
         text-align: center;
-        margin-bottom: 20%;
+        margin: 10% 10% 30% 10%;
         font-size: 3em;
         font-weight: bold;
       }
 
       @media (max-width: 480px) {
         .p1 {
-          font-size: 1.8em;
+          font-size: 8vw;
         }
       }
     </style>
   </head>
 
-  <body class="animate__animated animate__fadeIn">
+  <body class="animate__animated animate__fadeIn" id="home">
     <header id="header">
       <!-- Logo -->
       <div class="logo" id="zoom-in_out">
-        <a href="index.html">
+        <a href="#home">
           <img
             src="https://github.com/ejlef/GSMCI/blob/main/img/logo1.png?raw=true"
             data-src="https://github.com/ejlef/GSMCI/blob/main/img/logo1.png?raw=true"
@@ -217,9 +224,7 @@
       </div>
     </div>
     <!-- Mobile Navigation End -->
-    <br />
-    <br />
-    <br />
+
     <p class="p1">Updating soon...</p>
 
     <div include-html="line.html"></div>

@@ -15,10 +15,11 @@
     <title>News & Updates</title>
     <!-- Favicon -->
     <link
-    href="https://raw.githubusercontent.com/ejlef/GSMCI-Pictures/refs/heads/main/Logos/GSMCI%20Logo%20low.ico"
-    rel="icon"
-  />
+      href="https://raw.githubusercontent.com/ejlef/GSMCI-Pictures/refs/heads/main/Logos/GSMCI%20Logo%20low.ico"
+      rel="icon"
+    />
     <link href="css/header&drawer-menu.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/news-and-updates-main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -33,365 +34,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <style>
-      .affidavit-box {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        margin-bottom: 5%;
-      }
-
-      .img1,
-      .img2 {
-        max-width: 500px;
-        max-height: 500px;
-        border: solid 2px black;
-        margin-top: 5%;
-      }
-
-      .img1 {
-        margin-right: 3px;
-      }
-
-      .img2 {
-        margin-left: 3px;
-      }
-
-      .news-box {
-        height: auto;
-        width: 100%;
-        padding: 70px;
-        color: black;
-      }
-
-      .news-title {
-        font-weight: bold;
-        text-align: center;
-        font-size: 1.5em;
-      }
-
-      .highlight1 {
-        color: green;
-        font-weight: bold;
-      }
-
-      .highlight {
-        color: darkviolet;
-        font-weight: bold;
-      }
-
-      /* .carousel {
-            max-width: 600px;
-        } */
-
-      .box01 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-      }
-
-      .carousel-control-prev-icon,
-      .carousel-control-next-icon {
-        filter: invert(100%) !important;
-      }
-
-      .cntnt1 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 700px;
-      }
-
-      .carouse1align {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-      }
-
-      .n-and-u {
-        text-align: center;
-        font-size: 2.3em;
-        color: darkgreen;
-        font-weight: bold;
-        margin-bottom: 0%;
-      }
-
-      /* blur img effect */
-      .blur-up {
-        filter: blur(20px);
-        transition: filter 0.3s ease-out;
-        will-change: filter;
-      }
-
-      .lazyloaded {
-        filter: blur(0);
-      }
-
-      /* blur img effect end */
-
-      /* The Modal (background) Start */
-      .no-scroll {
-        overflow: hidden;
-        height: 100vh;
-      }
-
-      .modal {
-        display: none;
-        position: fixed;
-        z-index: 9999;
-        padding-top: 100px;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgb(0, 0, 0);
-        background-color: rgba(0, 0, 0, 0.9);
-      }
-
-      /* Modal Content (image) */
-      .modal-content {
-        margin: auto;
-        display: block;
-        width: 80%;
-        max-width: 700px;
-      }
-
-      /* Add Animation */
-      .modal-content,
-      #caption {
-        -webkit-animation-name: zoom;
-        -webkit-animation-duration: 0.6s;
-        animation-name: zoom;
-        animation-duration: 0.6s;
-      }
-
-      @-webkit-keyframes zoom {
-        from {
-          -webkit-transform: scale(0);
-        }
-
-        to {
-          -webkit-transform: scale(1);
-        }
-      }
-
-      @keyframes zoom {
-        from {
-          transform: scale(0);
-        }
-
-        to {
-          transform: scale(1);
-        }
-      }
-
-      /* The Close Button */
-      .close {
-        position: absolute;
-        top: 15px;
-        right: 35px;
-        color: #f1f1f1;
-        font-size: 50px;
-        font-weight: bold;
-        transition: 0.3s;
-      }
-
-      .close:hover,
-      .close:focus {
-        color: #bbb;
-        text-decoration: none;
-        cursor: pointer;
-      }
-
-      .prev,
-      .next {
-        cursor: pointer;
-        position: absolute;
-        top: 60%;
-        width: auto;
-        /* margin-top: -22px; */
-        padding: 20px;
-        color: white;
-        font-weight: bold;
-        font-size: 30px;
-        transition: 0.3s;
-        user-select: none;
-      }
-
-      .prev:hover,
-      .next:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-      }
-
-      .prev {
-        left: 10%;
-      }
-
-      .next {
-        right: 10%;
-      }
-
-      /* Modal Content (image) End */
-
-      .evnts {
-        text-align: center;
-        font-size: 3em;
-        font-weight: bold;
-        color: green;
-        margin-top: 5%;
-        margin-bottom: 0%;
-      }
-
-      .box1 {
-        display: flex;
-        justify-items: center;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: nowrap;
-        margin-bottom: 5%;
-      }
-
-      .box-1 {
-        background: #fff;
-        padding: 5%;
-      }
-
-      .box-1 img {
-        width: auto;
-        max-height: 500px;
-      }
-
-      .oopc1 {
-        color: darkgreen;
-        font-size: 3vw;
-        font-weight: bold;
-        margin-bottom: 0%;
-      }
-
-      .bknw {
-        color: #fff;
-        background-color: darkgreen;
-        padding: 5%;
-        font-size: 1.2em;
-        font-weight: bold;
-      }
-
-      .nt1 {
-        font-size: 1.5em;
-        margin-bottom: 0%;
-      }
-      .hd1 {
-        display: none;
-      }
-      /* 100% Image Width on Smaller Screens */
-      @media only screen and (max-width: 700px) {
-        .modal-content {
-          width: 100%;
-        }
-      }
-
-      /* Img Modal End */
-
-      @media (max-width: 768px) {
-        .n-and-u {
-          font-size: 2em;
-        }
-
-        .img1,
-        .img2 {
-          max-width: 400px;
-          max-height: 300px;
-        }
-
-        .prev,
-        .next {
-          display: none;
-        }
-
-        .news-box {
-          padding: 10% !important;
-        }
-        .box1 {
-          text-align: center;
-          flex-direction: column;
-        }
-        .hd1 {
-          display: block;
-        }
-        .hd2 {
-          display: none;
-        }
-
-        .box-1 img {
-          max-width: 400px;
-        }
-      }
-
-      @media (max-width: 480px) {
-        .prev,
-        .next {
-          display: none;
-        }
-
-        .btn-11 {
-          font-size: 0.9rem;
-        }
-
-        .n-and-u {
-          font-size: 1.5em;
-        }
-
-        .img1,
-        .img2 {
-          max-width: 300px;
-          max-height: 200px;
-        }
-
-        .evnts {
-          font-size: 2em;
-        }
-
-        .box1 {
-          text-align: center;
-          flex-direction: column;
-        }
-
-        .oopc1 {
-          font-size: 1.3em;
-          margin-bottom: 2%;
-        }
-
-        .nt1 {
-          font-size: 1.2em;
-        }
-
-        .box-1 {
-          margin-top: 10%;
-        }
-
-        .box-1 img {
-          max-width: 300px;
-        }
-        .hd1 {
-          display: block;
-        }
-        .hd2 {
-          display: none;
-        }
-
-        .evnts {
-          margin-top: 0%;
-        }
-      }
-    </style>
   </head>
 
-  <body class="animate__animated animate__fadeIn">
+  <body class="animate__animated animate__fadeIn" id="home">
     <header id="header">
       <!-- Logo -->
       <div class="logo" id="zoom-in_out">
-        <a href="index.html">
+        <a href="#home">
           <img
             src="https://github.com/ejlef/GSMCI/blob/main/img/logo1.png?raw=true"
             data-src="https://github.com/ejlef/GSMCI/blob/main/img/logo1.png?raw=true"
@@ -555,7 +204,7 @@
       </div>
     </div>
     <!-- Mobile Navigation End -->
-    <br />
+
     <div class="n-and-u">
       <p>NEWS AND UPDATES</p>
     </div>
@@ -589,77 +238,78 @@
         id="img01"
       />
     </div>
+
     <div include-html="line.html"></div>
 
     <div class="news-box">
       <div>
-        <span class="news-title"
-          >Guimaras Specialist Medical Center, Inc. - Updates</span
-        >
-        <br /><br /><br />
-        We are thrilled to announce several updates at Guimaras Specialist
-        Medical Center, Inc. (<span class="highlight">GSMCI</span>) designed to
-        enhance your healthcare experience: <br /><br />
-        <span class="highlight1">1. Expanded Services:</span><br /><br />
-        ● New Hemodialysis Department: Guimaras Specialist Medical Center, Inc.
-        (<span class="highlight">GSMCI</span>) is proud to announce the opening
-        of its new Hemodialysis Department, a testament to our commitment to
-        providing comprehensive and advanced healthcare services to the
-        community. This state-of-the-art department represents a significant
-        investment in expanding our capabilities and offering specialized care
-        for patients with kidney disease.<br />
-        ● Enhanced Imaging Services: <br />Guimaras Specialist Medical Center,
-        Inc. (<span class="highlight">GSMCI</span>) is committed to providing
-        patients with the most advanced and comprehensive diagnostic imaging
-        services. Our Imaging Department has undergone significant enhancements,
-        incorporating state-of-the-art technology and expanding our capabilities
-        to offer a wider range of services.<br /><br />
-        <span class="highlight1">2. Improved Technology:</span><br /><br />
-        ● Online Appointment Scheduling: You can now conveniently schedule
-        appointments online through our website www.gsmci.com. This eliminates
-        the need for phone calls and allows for greater flexibility.<br /><br />
-        <span class="highlight1">3. Enhanced Patient Care:</span><br /><br />
-        ● Dedicated Patient Navigator: We have implemented a dedicated patient
-        navigator program to guide you through your healthcare journey. Our
-        navigators will provide personalized support, answer questions, and
-        ensure a smooth and positive experience.<br /><br />
-        <span class="highlight1">4. Community Engagement:</span><br /><br />
-        ● Health Education Workshops: We are committed to promoting health and
-        wellness in our community. We will be hosting free health education
-        workshops on various topics throughout the year. Stay tuned for
-        announcements on our website and social media channels.<br />
-        <br />
-        We are dedicated to providing you with the highest quality healthcare in
-        a comfortable and compassionate environment. We invite you to experience
-        the difference at Guimaras Specialist Medical Center, Inc.
+        <p class="news-title">
+          Guimaras Specialist Medical Center, Inc. - Updates
+        </p>
+        <p class="news-cnt">
+          We are thrilled to announce several updates at Guimaras Specialist
+          Medical Center, Inc. (<span class="highlight">GSMCI</span>) designed
+          to enhance your healthcare experience:
+        </p>
+        <p class="highlight1">1. Expanded Services:</p>
+        <p class="news-cnt">
+          ● New Hemodialysis Department: Guimaras Specialist Medical Center,
+          Inc. (<span class="highlight">GSMCI</span>) is proud to announce the
+          opening of its new Hemodialysis Department, a testament to our
+          commitment to providing comprehensive and advanced healthcare services
+          to the community. This state-of-the-art department represents a
+          significant investment in expanding our capabilities and offering
+          specialized care for patients with kidney disease.<br />
+          ● Enhanced Imaging Services: <br />Guimaras Specialist Medical Center,
+          Inc. (<span class="highlight">GSMCI</span>) is committed to providing
+          patients with the most advanced and comprehensive diagnostic imaging
+          services. Our Imaging Department has undergone significant
+          enhancements, incorporating state-of-the-art technology and expanding
+          our capabilities to offer a wider range of services.<br /><br />
+          <span class="highlight1">2. Improved Technology:</span><br /><br />
+          ● Online Appointment Scheduling: You can now conveniently schedule
+          appointments online through our website www.gsmci.com. This eliminates
+          the need for phone calls and allows for greater flexibility.<br /><br />
+          <span class="highlight1">3. Enhanced Patient Care:</span><br /><br />
+          ● Dedicated Patient Navigator: We have implemented a dedicated patient
+          navigator program to guide you through your healthcare journey. Our
+          navigators will provide personalized support, answer questions, and
+          ensure a smooth and positive experience.<br /><br />
+          <span class="highlight1">4. Community Engagement:</span><br /><br />
+          ● Health Education Workshops: We are committed to promoting health and
+          wellness in our community. We will be hosting free health education
+          workshops on various topics throughout the year. Stay tuned for
+          announcements on our website and social media channels.<br />
+          <br />
+          We are dedicated to providing you with the highest quality healthcare
+          in a comfortable and compassionate environment. We invite you to
+          experience the difference at Guimaras Specialist Medical Center, Inc.
+        </p>
       </div>
     </div>
     <div include-html="line.html"></div>
 
-    <p class="evnts">- Events -</p>
+    <div class="m-4">
+      <p class="evnts">- Events -</p>
+    </div>
     <div class="box1">
       <div class="box-1 hd1">
         <img
           src="https://github.com/ejlef/GSMCI/blob/main/events/blessing.png?raw=true"
-        /><br />
+        />
       </div>
-      <div>
+      <div class="m-4">
         <p class="oopc1">Opening Of Dialysis Center</p>
         <p class="nt1">
-          The opening of GSMCI Dialysis Center <br />
-          was a resounding success, marked by a <br />
-          well-attended event and positive feedback <br />
-          from all who participated. The event <br />
-          showcased the institution's commitment to <br />
-          excellence and set astrong foundation <br />for future endeavors.
-          <br />
+          The opening of GSMCI Dialysis Center was a resounding success, marked
+          by a well-attended event and positive feedback from all who
+          participated. The event showcased the institution's commitment to
+          excellence and set astrong foundation for future endeavors.
           <br />
           We are happy to serve you.
         </p>
         <br />
-        <br />
-        <br />
-        <a href="#" class="bknw"> Book Now </a>
+        <p><a href="contact-us-main.html" class="bknw"> Book Now </a></p>
       </div>
       <div class="box-1 hd2">
         <img
@@ -668,32 +318,28 @@
       </div>
     </div>
 
-    <br /><br />
-    <p class="evnts">- News -</p>
+    <div class="m-4">
+      <p class="evnts">- News -</p>
+    </div>
     <div class="box1">
       <div class="box-1">
         <img
           src="https://github.com/ejlef/GSMCI/blob/main/news/baby.jpg?raw=true"
         /><br />
       </div>
-      <div>
+      <div class="m-4">
         <p class="oopc1">First Baby Born</p>
         <p class="nt1">
-          Congratulations on the arrival of your<br />
-          precious little one! This is the beginning <br />
-          of a beautiful new chapter in your <br />
-          lives, filled with joy, love, and countless <br />
-          unforgettable moments. May your days be filled <br />
-          with happiness as you embark on this <br />incredible journey of
+          Congratulations on the arrival of your precious little one! This is
+          the beginning of a beautiful new chapter in your lives, filled with
+          joy, love, and countless unforgettable moments. May your days be
+          filled with happiness as you embark on this incredible journey of
           parenthood.
         </p>
         <br />
-        <br />
-        <br />
-        <a href="#" class="bknw"> Book Now </a>
+        <p><a href="contact-us-main.html" class="bknw"> Book Now </a></p>
       </div>
     </div>
-    <br /><br />
     <div include-html="line.html"></div>
     <div include-html="HMO-s Partners.html"></div>
     <!-- Footer Section -->
@@ -701,48 +347,13 @@
 
     <!-- script js -->
     <script src="js/header&drawer-menu.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <script src="js/include-html&scroll-effect.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
       async
     ></script>
     <script>
-      // Wrap in an IIFE (Immediately Invoked Function Expression)
-      (async function () {
-        const elements = document.querySelectorAll("[include-html]");
-        for (const el of elements) {
-          const file = el.getAttribute("include-html");
-          try {
-            const response = await fetch(file);
-            if (response.ok) {
-              const text = await response.text();
-              el.innerHTML = text;
-
-              // Execute scripts within the injected content
-              const scripts = el.querySelectorAll("script");
-              scripts.forEach((script) => {
-                const newScript = document.createElement("script");
-                if (script.src) {
-                  newScript.src = script.src;
-                  newScript.async = false;
-                } else {
-                  newScript.text = script.textContent;
-                }
-                document.body.appendChild(newScript);
-              });
-            } else {
-              el.innerHTML = "Content not found.";
-            }
-          } catch (error) {
-            console.error("Error including HTML:", error);
-          }
-        }
-      })();
-
       // Get the modal and related elements
       var modal = document.getElementById("myModal");
       var modalImg = document.getElementById("img01");

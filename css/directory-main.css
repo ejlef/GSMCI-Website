@@ -14,6 +14,26 @@
   margin-bottom: 10%;
 }
 
+.drtry {
+  margin: 5%;
+  font-size: 4vw;
+}
+
+.box2 {
+  padding: 5%;
+}
+
+.t-name {
+  color: darkgreen;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
+
+.d-name {
+  font-family: "Roboro";
+  font-weight: bold;
+}
+
 .drtry,
 .dctrclnc,
 .text-doc {
@@ -35,12 +55,8 @@
   font-size: 1.3em;
 }
 
-.drtry {
-  font-size: 4vw;
-}
-
 .dctrclnc {
-  margin-top: 5%;
+  margin: 5%;
   text-align: center;
   font-size: 3.5vw;
 }
@@ -48,11 +64,9 @@
 .d-holder {
   margin: 5%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
-  gap: 1.5em;
-  font-family: "Roboto", sans-serif;
 }
 
 .d-holder,
@@ -140,8 +154,16 @@
   .wrds {
     font-size: 1em;
   }
+}
 
-  .box2 {
-    padding: 5%;
+@media (max-width: 426px) {
+  .drtry,
+  .dctrclnc,
+  .text-doc {
+    font-size: 8vw;
+  }
+
+  .wrds {
+    font-size: 4vw;
   }
 }

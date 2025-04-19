@@ -15,9 +15,9 @@
     <title>Career</title>
     <!-- Favicon -->
     <link
-    href="https://raw.githubusercontent.com/ejlef/GSMCI-Pictures/refs/heads/main/Logos/GSMCI%20Logo%20low.ico"
-    rel="icon"
-  />
+      href="https://raw.githubusercontent.com/ejlef/GSMCI-Pictures/refs/heads/main/Logos/GSMCI%20Logo%20low.ico"
+      rel="icon"
+    />
     <link href="css/header&drawer-menu.css" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -35,45 +35,45 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <style>
+      @font-face {
+        font-family: "AppleGaramond-Bold";
+        src: url("apple_garamond-font/AppleGaramond-Bold.ttf")
+          format("truetype");
+        font-weight: bold;
+      }
       .content-1 {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: space-evenly;
-        text-align: center;
+        justify-content: center;
+        margin: 5%;
       }
 
       .dv {
-        /* border: solid 2px darkviolet; */
         padding: 2%;
       }
 
       .ec {
+        font-family: "AppleGaramond-Bold";
         color: darkgreen;
-        font-weight: bold;
-        font-size: 2.5em;
       }
 
-      /* @media (max-width: 768px) {
-        .content-1 {
-          margin-top: 25%;
-        }
-      } */
+      .cnt {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-size: 4vw;
+      }
 
-      @media (max-width: 480px) {
+      @media (max-width: 426px) {
         .ec {
-          font-size: 1.5em;
+          font-size: 8vw;
         }
       }
     </style>
   </head>
 
-  <body class="animate__animated animate__fadeIn">
+  <body class="animate__animated animate__fadeIn" id="home">
     <header id="header">
       <!-- Logo -->
       <div class="logo" id="zoom-in_out">
-        <a href="index.html">
+        <a href="#home">
           <img
             src="https://github.com/ejlef/GSMCI/blob/main/img/logo1.png?raw=true"
             data-src="https://github.com/ejlef/GSMCI/blob/main/img/logo1.png?raw=true"
@@ -237,13 +237,10 @@
       </div>
     </div>
     <!-- Mobile Navigation End -->
-    <br />
-    <br />
     <div class="content-1">
       <div class="dv">
         <p class="ec">EXPLORE CAREER</p>
-        <br />
-        <div>
+        <div class="cnt">
           Uncover exciting opportunities and unlock <br />your potential with
           us.Join us and be a part <br />of a team that values innovation,
           dedication,<br />

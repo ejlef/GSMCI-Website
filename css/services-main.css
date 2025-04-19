@@ -6,21 +6,34 @@
   font-weight: bold;
 }
 
+.services-title {
+  margin: 5%;
+}
+
 .first-services {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  height: 100%;
+}
+.holder-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 5% 5% 5%;
 }
 
-.holder-services {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+.holder-services div {
+  display: flex;
+  flex-direction: column;
+  flex: 300px;
   width: 100%;
-  padding: 3%;
+  margin: 5%;
+}
+
+.holder-services p {
+  font-family: "Roboto";
 }
 
 .serbox-1 {
@@ -33,8 +46,8 @@
 }
 
 .sercap {
+  font-family: "AppleGaramond-Bold";
   font-size: 1.25rem;
-  font-weight: bold;
   background: darkgreen;
   color: white;
   padding: 0.5rem;
@@ -68,19 +81,8 @@
   .rsvsc {
     font-size: 8vw;
   }
-}
 
-@media (max-width: 376px) {
-  .rsvsc {
-    font-size: 8vw;
-  }
-}
-
-@media (max-width: 321px) {
-  .rsvsc {
-    font-size: 8vw;
-  }
   .lsevrydpt {
-    font-size: 5vw;
+    font-size: 4.5vw;
   }
 }

@@ -7,6 +7,7 @@
 }
 
 .about-us {
+  margin: 5%;
   text-align: center;
 }
 
@@ -35,6 +36,46 @@
   color: darkviolet;
 }
 
+/* Vision, Mission, Goals , Core Values,*/
+.corevalues-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.vmgc-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box-vmgc {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.box-vmgc h2 {
+  text-align: center;
+  color: darkgreen;
+  font-family: "AppleGaramond-Bold";
+}
+
+.grnclr {
+  color: darkgreen;
+  font-weight: bold;
+}
+
 /* The Modal Img Start */
 .no-scroll {
   overflow: hidden;
@@ -57,7 +98,7 @@
   display: none;
   position: fixed;
   z-index: 9999;
-  padding: 50% 1% 0 1%;
+  padding: 50vw 1% 0 1%;
   left: 0;
   top: 0;
   width: 100%;
@@ -73,7 +114,6 @@
   display: block;
 }
 
-/* Add Animation */
 .modal-content,
 #caption {
   -webkit-animation-name: zoom;
@@ -102,7 +142,6 @@
   }
 }
 
-/* The Close Button */
 .close {
   position: absolute;
   top: 15px;
@@ -121,82 +160,63 @@
 }
 /* The Modal Img End */
 
-/* Vision, Mission, Goals , Core Values,*/
-.corevalues-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
-
-.vmgc-holder {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  padding: 5%;
-}
-
-.box-vmgc {
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: 100%;
-  max-width: 500px;
-}
-
-.box-vmgc h2 {
-  text-align: center;
-  color: darkgreen;
-  font-family: "AppleGaramond-Bold";
-}
-
-.grnclr {
-  color: darkgreen;
-  font-weight: bold;
-}
-
 /* Responsive Design */
-@media (max-width: 769px) {
-  .content-profile p {
-    text-align: left;
-    padding: 0 1% 0 4%;
-    font-size: 1.3em;
-  }
+@media (max-width: 1025px) {
   .about-us h1 {
-    font-size: 3.5em;
+    font-size: 3.5vw;
+  }
+
+  .content-profile p {
+    padding: 1vh 5vw 5vh 6.5vw;
+  }
+
+  .box-vmgc {
+    max-width: 400px;
+  }
+
+  .box-vmgc h2 {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 769px) {
+  .about-us h1 {
+    font-size: 8vw;
+  }
+
+  .content-profile p {
+    padding: 0.5vh 5vw 5vh 6.5vw;
+    font-size: 4vw;
+  }
+
+  .box-vmgc h2 {
+    font-size: 6vw;
   }
 }
 
 @media (max-width: 426px) {
-  .content-profile p {
-    text-align: left;
-    padding: 0 1% 0 4%;
-    font-size: 1.2em;
+  .box-vmgc p {
+    font-size: 4vw;
   }
+
   .about-us h1 {
-    font-size: 3em;
+    font-size: 8vw;
   }
-}
-@media (max-width: 376px) {
+
+  .box-vmgc h2 {
+    font-size: 6.5vw;
+  }
+
   .content-profile p {
-    text-align: left;
-    padding: 0 1% 0 4%;
-    font-size: 1.1em;
+    padding: 0.5vh 5vw 5vh 6.5vw;
+    font-size: 4vw;
   }
-  .about-us h1 {
-    font-size: 2.5em;
+
+  .box-vmgc li {
+    font-size: 4vw;
   }
-}
-@media (max-width: 321px) {
-  .content-profile p {
-    text-align: left;
-    padding: 0 1% 0 4%;
-    font-size: 1em;
-  }
-  .about-us h1 {
-    font-size: 2em;
+
+  .box-vmgc div {
+    font-size: 4vw;
   }
 }

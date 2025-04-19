@@ -169,13 +169,23 @@ nav.desktop-nav a {
 }
 
 /* Responsive Design */
-@media (min-width: 1441px) {
+@media (max-width: 2561px) {
   nav.desktop-nav {
-    gap: 5rem;
+    gap: 4vw;
+  }
+
+  header {
+    padding: 1.5vh 6.5vw;
   }
 
   .logo {
-    width: 20%;
+    width: 20vw;
+  }
+}
+
+@media (max-width: 1441px) {
+  nav.desktop-nav {
+    gap: 3vw;
   }
 
   ul.dropdown-menu.drp1.show {
@@ -184,21 +194,15 @@ nav.desktop-nav a {
   }
 }
 
-@media (max-width: 1441px) {
-  .logo {
-    width: 20%;
-  }
-}
-
 @media (max-width: 1025px) {
-  .logo {
-    width: 25%;
+  nav.desktop-nav {
+    gap: 2vw;
   }
 }
 
 @media (max-width: 769px) {
   .logo {
-    width: 55%;
+    width: 50%;
   }
 
   nav.desktop-nav {
@@ -211,12 +215,9 @@ nav.desktop-nav a {
     margin: 0% !important;
   }
 
-  header {
-    padding: 1.1rem 2.5rem;
-  }
   .openbtn {
     display: block;
-    font-size: 8vw;
+    font-size: 7vw;
   }
   .sidepanel a {
     font-size: 6vw;
@@ -224,9 +225,6 @@ nav.desktop-nav a {
 }
 
 @media (max-width: 426px) {
-  header {
-    padding: 1rem 1.5rem;
-  }
   .sidepanel a {
     font-size: 6vw;
   }

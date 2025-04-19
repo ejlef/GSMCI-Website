@@ -6,101 +6,110 @@
   font-weight: bold;
 }
 
-.corp-governance {
-  margin: 5%;
-  text-align: center;
+.n-and-u p,
+.evnts {
+  margin-bottom: 0%;
 }
 
-.corpbox {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 0 3% 3% 3%;
-}
-.gsmcitext {
-  font-family: "Roboto";
-  font-size: 2vw;
-}
-
-.corp-governance h1 {
+.n-and-u {
   font-family: "AppleGaramond-Bold";
+  text-align: center;
   color: darkgreen;
-  font-size: 3.5vw;
-  padding: 0%;
-  margin: 0%;
+  margin: 5%;
 }
 
-.box-cg {
-  padding: 2% 0 0 5%;
-}
-
-.box-cg p {
-  margin-bottom: 0.3rem;
-}
-
-.dtr-p {
-  font-size: 2vw;
-}
-
-.doctor-name {
-  font-weight: bolder;
-}
-
-.ligt1 {
-  font-weight: lighter;
-}
-
-.img-box1 {
+.affidavit-box {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  margin: 5%;
 }
 
-.imgdrctrs-box img {
-  width: 100%;
-  box-shadow: 3px 3px 3px #ccc;
+.img1,
+.img2 {
+  width: 45%;
+  box-shadow: 1px 2px 10px 1px #aaa;
+  border: solid 2px black;
 }
 
-.brdofdrk-box1 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 2%;
+.news-box {
+  margin: 10%;
 }
 
-.manual-section p {
+.news-title,
+.highlight1,
+.highlight,
+.evnts {
+  font-family: "AppleGaramond-Bold";
+}
+
+.news-cnt, .nt1{
+  font-family: "Roboto";
+}
+
+.highlight1 {
+  color: green;
+}
+
+.highlight {
+  color: darkviolet;
+}
+
+.box01 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-size: 2em;
+}
+
+.evnts {
   color: darkgreen;
-  font-weight: bold;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin-bottom: 1.5%;
   text-align: center;
 }
 
-.manual-pic {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  width: 100%;
-  height: auto;
-  margin-bottom: 3%;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  white-space: nowrap;
-  padding: 5%;
-  gap: 10%;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%) !important;
 }
 
-.img1 {
+.cntnt1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 700px;
+}
+
+.carouse1align {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.box1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box-1 img {
   width: 100%;
-  padding: 1%;
-  border: solid 2px darkgreen;
+  padding: 5%;
+}
+
+.oopc1 {
+  font-family: "Roboto";
+  font-weight: bold;
+  color: darkgreen;
+}
+
+.bknw {
+  color: #fff;
+  background-color: darkgreen;
+  padding: 5%;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.hd1 {
+  display: none;
 }
 
 /* blur img effect */
@@ -113,11 +122,8 @@
 .lazyloaded {
   filter: blur(0);
 }
-/* blur img effect end */
 
-.manual-pic img {
-  cursor: pointer;
-}
+/* blur img effect end */
 
 /* The Modal (background) Start */
 .no-scroll {
@@ -200,6 +206,7 @@
   position: absolute;
   top: 60%;
   width: auto;
+  /* margin-top: -22px; */
   padding: 20px;
   color: white;
   font-weight: bold;
@@ -220,111 +227,52 @@
 .next {
   right: 10%;
 }
+
 /* Modal Content (image) End */
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .prev,
-  .next {
-    display: none;
-  }
-
-  .corp-governance h1 {
-    font-size: 8vw;
-  }
-
-  .gsmcitext {
-    font-size: 4vw;
-  }
-
-  .dtr-p {
-    font-size: 3.5vw;
-  }
-
-  .corpbox {
-    flex-direction: column;
-  }
-
-  .imgdrctrs-box img {
-    height: auto;
-  }
-}
-
 @media (max-width: 426px) {
+  .n-and-u {
+    font-size: 8vw;
+  }
+
+  .news-title {
+    font-size: 7vw;
+  }
+
+  .news-cnt {
+    font-size: 4.5vw;
+  }
+
+  .highlight1 {
+    font-size: 6.5vw;
+  }
+
   .prev,
   .next {
     display: none;
   }
 
-  .corp-governance h1 {
+  .btn-11 {
+    font-size: 0.9rem;
+  }
+
+  .evnts {
     font-size: 8vw;
   }
 
-  .gsmcitext {
+  .oopc1 {
+    font-size: 5vw;
+  }
+
+  .nt1 {
     font-size: 4vw;
   }
 
-  .dtr-p {
-    font-size: 3.5vw;
+  .hd1 {
+    display: block;
   }
-
-  .corpbox {
-    flex-direction: column;
-  }
-
-  .imgdrctrs-box img {
-    height: auto;
-  }
-}
-@media (max-width: 376px) {
-  .prev,
-  .next {
+  .hd2 {
     display: none;
-  }
-
-  .corp-governance h1 {
-    font-size: 8vw;
-  }
-
-  .gsmcitext {
-    font-size: 4vw;
-  }
-
-  .dtr-p {
-    font-size: 3.5vw;
-  }
-
-  .corpbox {
-    flex-direction: column;
-  }
-
-  .imgdrctrs-box img {
-    height: auto;
-  }
-}
-@media (max-width: 321px) {
-  .prev,
-  .next {
-    display: none;
-  }
-
-  .corp-governance h1 {
-    font-size: 8vw;
-  }
-
-  .gsmcitext {
-    font-size: 4vw;
-  }
-
-  .dtr-p {
-    font-size: 3.5vw;
-  }
-
-  .corpbox {
-    flex-direction: column;
-  }
-
-  .imgdrctrs-box img {
-    height: auto;
   }
 }

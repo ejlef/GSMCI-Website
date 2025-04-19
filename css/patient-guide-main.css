@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "AppleGaramond-Bold";
+  src: url("../apple_garamond-font/AppleGaramond-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+.patient {
+  margin: 5%;
+}
+
+.patient .ptnt-box {
+  margin: 5%;
+}
+
+.ptntgud,
+.prr,
+.rightsandresp,
+.ap,
+.vst-hr,
+.phth {
+  margin: 0%;
+}
+
+.ptntgud {
+  font-size: 2.3em;
+  color: darkgreen;
+  line-height: 1;
+}
+
+.ptntgud,
+.rightsandresp,
+.ap,
+.vst-hr,
+.phth {
+  font-family: "AppleGaramond-Bold";
+}
+
+.ptntgud,
+.prr {
+  text-align: center;
+  margin: 0%;
+}
+
+.prr {
+  font-family: "Roboto";
+}
+
+.p-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.p-holder1 {
+  display: flex;
+  justify-content: center;
+}
+
+.ap-steps,
+.vst-cntnt,
+.ca {
+  color: darkgreen;
+  font-weight: 700;
+}
+
+.rgt-cntnt {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-style: italic;
+}
+
+.rgt-cntnt1 {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+}
+
+.box-p,
+.box-p2 {
+  width: 300px;
+}
+
+.step-num {
+  font-size: 2em;
+  font-weight: bold;
+  color: darkgreen;
+}
+
+.step-cntnt {
+  font-family: "Roboto";
+}
+
+/* Responsive Design */
+@media (max-width: 426px) {
+  .ptntgud {
+    font-size: 8vw;
+  }
+
+  .rightsandresp {
+    font-size: 8vw;
+  }
+
+  .prr {
+    font-size: 3.5vw;
+  }
+
+  .rgt-cntnt {
+    font-size: 4.5vw;
+  }
+
+  .ap {
+    font-size: 7vw;
+  }
+
+  .ap-steps {
+    font-size: 4vw;
+  }
+
+  .step-num {
+    font-size: 7.5vw;
+  }
+
+  .step-cntnt {
+    font-size: 4vw;
+  }
+
+  .vst-hr {
+    font-size: 8vw;
+  }
+
+  .phth {
+    font-size: 8vw;
+  }
+}

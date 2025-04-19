@@ -34,12 +34,14 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
   />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   </head>
-  <body class="animate__animated animate__fadeIn">
+  <body class="animate__animated animate__fadeIn" id="home">
     <header id="header">
       <!-- Logo -->
       <div class="logo" id="zoom-in_out">
-        <a href="index.html">
+        <a href="#home">
           <img
             src="https://github.com/ejlef/GSMCI/blob/main/img/logo1.png?raw=true"
             data-src="https://github.com/ejlef/GSMCI/blob/main/img/logo1.png?raw=true"
@@ -203,11 +205,9 @@
       </div>
     </div>
     <!-- Mobile Navigation End -->
-<br />
     <div class="about-us">
       <h1>ABOUT US</h1>
     </div>
-    <br />
     <div class="content-profile">
       <p>
         <span style="font-weight: bold; color: black"
@@ -271,8 +271,6 @@
       </div>
     </section>
 
-
-
     <section class="vmgc-holder">
       <!-- Goals Section -->
       <div class="box-vmgc">
@@ -316,48 +314,15 @@
     <div include-html="footer.html"></div>
     <!-- script js -->
     <script src="js/header&drawer-menu.js"></script>
+    <script src="js/include-html&scroll-effect.js"></script>
     <script
     src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
     async
   ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
     ></script>
     <script>
-      // Wrap in an IIFE (Immediately Invoked Function Expression)
-      (async function () {
-        const elements = document.querySelectorAll("[include-html]");
-        for (const el of elements) {
-          const file = el.getAttribute("include-html");
-          try {
-            const response = await fetch(file);
-            if (response.ok) {
-              const text = await response.text();
-              el.innerHTML = text;
-
-              // Execute scripts within the injected content
-              const scripts = el.querySelectorAll("script");
-              scripts.forEach((script) => {
-                const newScript = document.createElement("script");
-                if (script.src) {
-                  newScript.src = script.src;
-                  newScript.async = false;
-                } else {
-                  newScript.text = script.textContent;
-                }
-                document.body.appendChild(newScript);
-              });
-            } else {
-              el.innerHTML = "Content not found.";
-            }
-          } catch (error) {
-            console.error("Error including HTML:", error);
-          }
-        }
-      })();
-
       // Get the modal and related elements
       var modal = document.getElementById("myModal");
       var modalImg = document.getElementById("img01");

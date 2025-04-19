@@ -1,4 +1,5 @@
 .board-of-directors {
+  margin: 5%;
   text-align: center;
 }
 
@@ -13,7 +14,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   padding: 2%;
 }
 
@@ -22,18 +22,15 @@
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.35);
-  margin: 1%;
+  /* margin: 1%; */
+  padding: 0.5%;
 }
 
 .brdofdrk-box1 div {
   display: flex;
   flex-direction: column;
   flex: 300px;
-  padding: 1%;
-}
-
-.box-img1 {
-  align-items: center;
+  padding: 4%;
 }
 
 .name1 {
@@ -103,7 +100,7 @@
     width: 100%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .hdi1 {
     display: block !important;
   }
@@ -112,15 +109,19 @@
     display: none !important;
   }
 
+  .brdofdrk-box1 div {
+    padding: 2.5%;
+  }
+
   .name1 {
     font-size: 1.5em;
   }
 
   .title1 {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 
-  .details1 {
+  .details1 p {
     font-size: 1em;
     text-align: left;
   }
@@ -131,50 +132,21 @@
 }
 
 @media (max-width: 426px) {
-  .hdi1 {
-    display: block !important;
-  }
-
-  .hdi2 {
-    display: none !important;
-  }
-
-  .name1 {
-    font-size: 1.4em;
-  }
-
-  .title1 {
-    font-size: 1em;
-  }
-
-  .name1,
-  .title1 {
-    text-align: center;
-  }
-
-  .details1 {
-    font-size: 1em;
-    text-align: left;
-  }
 
   .board-of-directors h1 {
-    font-size: 2.5em;
+    font-size: 8vw;
   }
-}
-@media (max-width: 376px) {
-  .hdi1 {
-    display: block !important;
-  }
-  .hdi2 {
-    display: none !important;
+
+  .brdofdrk-box1 {
+    padding: 10% 5% 10% 5%;
   }
 
   .name1 {
-    font-size: 1.3em;
+    font-size: 6.5vw;
   }
 
   .title1 {
-    font-size: 0.9em;
+    font-size: 4vw;
   }
 
   .name1,
@@ -183,40 +155,6 @@
   }
 
   .details1 p {
-    font-size: 0.9em;
-    text-align: left;
-  }
-  .board-of-directors h1 {
-    font-size: 2em;
-  }
-}
-@media (max-width: 321px) {
-  .hdi1 {
-    display: block !important;
-  }
-
-  .hdi2 {
-    display: none !important;
-  }
-
-  .name1 {
-    font-size: 1.2em;
-  }
-
-  .title1 {
-    font-size: 0.8em;
-  }
-
-  .name1,
-  .title1 {
-    text-align: center;
-  }
-
-  .details1 p {
-    font-size: 0.8em;
-    text-align: left;
-  }
-  .board-of-directors h1 {
-    font-size: 1.5em;
+    font-size: 4vw;
   }
 }

@@ -15,14 +15,15 @@
     <title>Patient Guide</title>
     <!-- Favicon -->
     <link
-    href="https://raw.githubusercontent.com/ejlef/GSMCI-Pictures/refs/heads/main/Logos/GSMCI%20Logo%20low.ico"
-    rel="icon"
-  />
+      href="https://raw.githubusercontent.com/ejlef/GSMCI-Pictures/refs/heads/main/Logos/GSMCI%20Logo%20low.ico"
+      rel="icon"
+    />
     <link href="css/header&drawer-menu.css" rel="stylesheet" />
+    <link href="css/patient-guide-main.css" rel="stylesheet" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -33,74 +34,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <style>
-      .ptntgud {
-        margin-top: 12%;
-        font-size: 2.3em;
-        text-align: center;
-        color: darkgreen;
-        font-weight: bold;
-        line-height: 1;
-      }
-
-      .prr {
-        font-size: 20px;
-        color: black;
-        font-weight: lighter;
-      }
-
-      .rightsandresp {
-        font-size: 2.5em;
-        font-weight: bold;
-        padding-bottom: 8px;
-      }
-
-      .p-holder {
-        display: flex;
-        justify-content: center;
-        margin-top: 5%;
-        padding-bottom: 100px;
-        flex-wrap: wrap;
-      }
-
-      .p-holder1 {
-        display: flex;
-        justify-content: center;
-        margin-left: 13%;
-        margin-top: 5%;
-        padding-bottom: 100px;
-      }
-
-      .box-p {
-        height: auto;
-        width: 500px;
-        padding: 6px;
-      }
-
-      .box-p2 {
-        height: auto;
-        width: 400px;
-        padding: 6px;
-      }
-
-      .np {
-        border: 1px solid lightgrey;
-      }
-
-      @media (max-width: 480px) {
-        .ptntgud {
-          margin-top: 12%;
-          font-size: 2em;
-        }
-      }
-    </style>
   </head>
 
-  <body class="animate__animated animate__fadeIn">
+  <body class="animate__animated animate__fadeIn" id="home">
     <header id="header">
       <!-- Logo -->
       <div class="logo" id="zoom-in_out">
-        <a href="index.html">
+        <a href="#home">
           <img
             src="https://github.com/ejlef/GSMCI/blob/main/img/logo1.png?raw=true"
             data-src="https://github.com/ejlef/GSMCI/blob/main/img/logo1.png?raw=true"
@@ -266,257 +206,217 @@
     <!-- Mobile Navigation End -->
 
     <div class="patient">
-      <p class="ptntgud">
-        PATIENT GUIDE
-        <br />
-        <span class="prr">Patient Rights & Responsibilities</span>
-      </p>
+      <div class="ptnt-box">
+        <p class="ptntgud">PATIENT GUIDE</p>
+        <p class="prr">Patient Rights & Responsibilities</p>
+      </div>
       <div class="p-holder">
         <div class="box-p">
-          <p class="rightsandresp">RIGHTS<br /></p>
-          <p style="line-height: 1.5; font-size: 20px">
+          <p class="rightsandresp">RIGHTS:</p>
+          <p class="rgt-cntnt">
             1. To be given good quality healthcare in a safe setting without
             discrimination regardless of age, sex, gender, religion, ethnicity,
             political affiliation, disability or capacity to pay.
           </p>
-          <p style="line-height: 1.5; font-style: italic">
+          <p class="rgt-cntnt1">
             Mabigyan ng de-kalidad na serbisyong pangkalusugan sa isang ligtas
             at maayos na pasilidad ng walang diskriminasyon anuman ang iyong
             edad, kasarian, relihiyon, etnisidad, kasapiang political,
             kapansanan o kakayahang makapagbayad.
           </p>
-          <br />
-          <p style="line-height: 1.5; font-size: 20px">
+
+          <p class="rgt-cntnt">
             2. To be assigned a competent physician, and know about financial
             assistance.
           </p>
-          <p style="line-height: 1.5; font-style: italic">
+          <p class="rgt-cntnt1">
             Mabigyan ng mahusay na doctor at malaman ang bayarin sa ospital at
             doctor at makatanggap ng impormasyon hinggil sa posibilidad na
             tulong pinansiyal.
           </p>
-          <br />
 
-          <p style="line-height: 1.5; font-size: 20px">
+          <p class="rgt-cntnt">
             3.To be allowed to notify chosen relatives and doctor about hospital
             admission.
           </p>
-          <p style="line-height: 1.5; font-style: italic">
+          <p class="rgt-cntnt1">
             Maipaalam sa mga kapamilya o mga kamag-anak at sa napiling doctor
             ang tungkol sa iyong kalagayan at pagkakapasok sa ospital.
           </p>
-          <br />
 
-          <p style="line-height: 1.5; font-size: 20px">
+          <p class="rgt-cntnt">
             4. To be accompanied during hospital stay provided it will not pose
             risk to the rights, safety or health of others.
           </p>
-          <p style="line-height: 1.5; font-style: italic">
+          <p class="rgt-cntnt1">
             Magkaroon ng kasama sa iyong pananatili sa ospital maliban lamang
             kung nakokompromiso nito ang karapatan, kaligtasan o kalusugan ng
             iba.
           </p>
-          <br />
-
-          <p style="line-height: 1.5; font-size: 20px">
+          <p class="rgt-cntnt">
             5. To be allowed to exercise spiritual and cultural beliefs.
           </p>
 
-          <p style="line-height: 1.5; font-style: italic">
+          <p class="rgt-cntnt1">
             Malaya kang isagawa ang iyong espiritwal at kultural na paniniwala
             na umaayon sa mga kakayahan at mga tuntunin ng ospital.
           </p>
-          <br />
-
-          <p style="line-height: 1.5; font-size: 20px">
+          <p class="rgt-cntnt">
             6. To be properly informed before giving express consent in any
             procedure.
           </p>
-          <p style="line-height: 1.5; font-style: italic">
+          <p class="rgt-cntnt1">
             Malaman at makapagbigay ng pahintulot o tanggihan ang anumang
             pamamaraan o pananaliksik na di-emergency.
           </p>
-          <br />
 
-          <p style="line-height: 1.5; font-size: 20px">
+          <p class="rgt-cntnt">
             7. To be secured of the privacy and confidentiality of medical
             records.
           </p>
-          <p style="line-height: 1.5; font-style: italic">
+          <p class="rgt-cntnt1">
             Makasiguro sa pagiging pribado at kumpidensyal ng iyong ulat medical
             alinsunod sa batas.
           </p>
-          <br />
-
-          <p style="line-height: 1.5; font-size: 20px">
+          <p class="rgt-cntnt">
             8. To be accompanied during physical examination.
           </p>
-          <p style="line-height: 1.5; font-style: italic">
+          <p class="rgt-cntnt1">
             Maaari kang humiling ng kasama habang isinasagawa ang pisikal na
             eksaminasyon.
           </p>
-          <br />
 
-          <p style="line-height: 1.5; font-size: 20px">
-            9. To be represented in behalf of them.
-          </p>
-          <p style="line-height: 1.5; font-style: italic">
+          <p class="rgt-cntnt">9. To be represented in behalf of them.</p>
+          <p class="rgt-cntnt1">
             Makapagtalaga ng taong magrerepresenta sa iyo, kung kakailanganin.
           </p>
-          <br />
-          <p style="line-height: 1.5; font-size: 20px">
+
+          <p class="rgt-cntnt">
             10. To be informed of the complaints and grievance process.
           </p>
-          <p style="line-height: 1.5; font-style: italic">
+          <p class="rgt-cntnt1">
             Malaman ang proseso ng pagrereklamo at ipahayag ang mga hinaing ng
             walang takot sa igaganting paratang o paghihiganti. Ikaw ay
             hinihikayat na direktang makipag-usap sa iyong health care provider
             na nangangalaga sa iyo.
           </p>
         </div>
-        <div class="box-p">
-          <p class="rightsandresp">RESPONSIBILITIES<br /></p>
 
-          <p style="line-height: 1.5; font-size: 20px">
+        <div class="box-p">
+          <p class="rightsandresp">RESPONSIBILITIES:</p>
+
+          <p class="rgt-cntnt">
             1.Shall provide adequate, accurate, truthful and complete
             information about all matters pertaining to his/her health. This
             includes past illnesses, medications, advance directives and other
             health related matters. He/she shall report any changes in his/her
             condition to his/her physician or healthcare team.
           </p>
-          <p style="line-height: 1.5; font-style: italic">
+          <p class="rgt-cntnt1">
             Magbigay ng wasto at kumpletong impormasyon tungkol sa iyo at sa
             iyong kalusugan kabilang na ang mga kasalukuyang reklamo, nakaraang
             problema sa kalusugan at mga pagbisita sa ospital, mga gamut na
             iniinom at iba pang impormasyon sa iyong palagay ay kailangang
             malaman ng iyong mga tagapangalaga.
           </p>
-          <br />
-          <p style="line-height: 1.5; font-size: 20px">
+          <p class="rgt-cntnt">
             2. Shall ensure that he/she understands the purpose and cost of any
             proposed treatment or procedure before deciding to accept it.
           </p>
-          <p style="line-height: 1.5; font-style: italic">
+          <p class="rgt-cntnt1">
             Tiyakin na nauunawaan ang lahat ng pamamaraan, pagsusuri, halaga at
             paggamot na ipinaliwanag ng mga kinauukulan bago magpasyang
             tanggapin ito.
           </p>
-          <br />
-
-          <p style="line-height: 1.5; font-size: 20px">
+          <p class="rgt-cntnt">
             3.Shall follow the treatment plan to which he/she agreed upon.
           </p>
-          <p style="line-height: 1.5; font-style: italic">
+          <p class="rgt-cntnt1">
             Sundin ang napagkasunduang plano sa pangangalaga.
           </p>
-          <br />
-
-          <p style="line-height: 1.5; font-size: 20px">
+          <p class="rgt-cntnt">
             4.Give consideration for the rights of other patient’s and
             healthcare providers by following hospital rules and regulations
             concerning ethical and respect to other’s privacy.
           </p>
-          <p style="line-height: 1.5; font-style: italic">
+          <p class="rgt-cntnt1">
             Magbigay ng pagpapahalaga sa mga karapatan ng kapwa pasyente at
             kanilang tagapangalaga sa pamamagitan ng pagsunod sa lahat ng mga
             alituntunin ukol sa karapatan ng bawat pasyente.
           </p>
-          <br />
-
-          <p style="line-height: 1.5; font-size: 20px">
+          <p class="rgt-cntnt">
             5.Inform the attending physician should you desire to seek second
             opinion or to consult another physician.
           </p>
-
-          <p style="line-height: 1.5; font-style: italic">
+          <p class="rgt-cntnt">
             Magpaalam sa kasulukuyang sumusuring doctor kung nais humingi ng
             pangalawang opinyon mula sa ibang manggagamot bago lubusang
             magpasya.
           </p>
-          <br />
-
-          <p style="line-height: 1.5; font-size: 20px">
+          <p class="rgt-cntnt">
             6. Shall ensure the financial obligations to my healthcare are
             fulfilled or settled.
           </p>
-          <p style="line-height: 1.5; font-style: italic">
+          <p class="rgt-cntnt1">
             Maninigurado na tutuparin ang pinansyal na obligasyon sa ospital
             ayon sa kontratang nilagdaan.
           </p>
-          <br />
-
-          <p style="line-height: 1.5; font-size: 20px">
+          <p class="rgt-cntnt">
             7.Ensure the integrity and authenticity of medical record and
             understand that any false information is a criminal act under the
             penal code.
           </p>
-          <p style="line-height: 1.5; font-style: italic">
+          <p class="rgt-cntnt1">
             Maninigurado na tutuparin ang pinansyal na obligasyon sa ospital
             ayon sa kontratang nilagdaan.
           </p>
-          <br />
-
-          <p style="line-height: 1.5; font-size: 20px">
+          <p class="rgt-cntnt">
             8. Leave the valuables and personal belongings at home or have your
             family members take them home.
           </p>
-          <p style="line-height: 1.5; font-style: italic">
+          <p class="rgt-cntnt1">
             Iwanan ang mga mahahalagang gamit at mga personal na gamit sa bahay
             o ipauwi ang mga ito sa mga miyembro ng pamilya.
           </p>
-          <br />
         </div>
       </div>
     </div>
 
     <div class="patient">
-      <p style="font-size: 2.2em; padding-left: 12vw">ADMISSION PROCEDURE</p>
-      <p style="font-size: 20px; color: darkgreen; padding-left: 12vw">
-        Admission is so easy in just 7 steps......
-      </p>
-
+      <div class="ptnt-box">
+        <p class="ap">ADMISSION PROCEDURE</p>
+        <p class="ap-steps">Admission is so easy in just 7 steps...</p>
+      </div>
       <div class="p-holder">
         <div class="box-p2">
           <p>
-            <span style="font-size: 2em; font-weight: bold; color: darkgreen"
-              >STEP 1</span
-            >
+            <span class="step-num">STEP 1</span>
             <br />
-            <span style="font-size: 20px"
+            <span class="step-cntnt"
               >Appraise patient hospital policy,<br />
               room and board</span
             >
           </p>
-          <br />
           <p>
-            <span style="font-size: 2em; font-weight: bold; color: darkgreen"
-              >STEP 4</span
-            ><br />
-            <span style="font-size: 20px">Queuing of rooms available</span>
+            <span class="step-num">STEP 4</span><br />
+            <span class="step-cntnt">Queuing of rooms available</span>
           </p>
         </div>
 
         <div class="box-p2">
           <p>
-            <span style="font-size: 2em; font-weight: bold; color: darkgreen"
-              >STEP 2</span
-            ><br />
-            <span style="font-size: 20px">Fill – up Admission Forms</span>
+            <span class="step-num">STEP 2</span><br />
+            <span class="step-cntnt">Fill – up Admission Forms</span>
           </p>
-          <br />
-          <br />
           <p>
-            <span style="font-size: 2em; font-weight: bold; color: darkgreen"
-              >STEP 5</span
-            ><br />
-            <span style="font-size: 20px">Admit patient in the system</span>
+            <span class="step-num">STEP 5</span><br />
+            <span class="step-cntnt">Admit patient in the system</span>
           </p>
-          <br />
+
           <p>
-            <span style="font-size: 2em; font-weight: bold; color: darkgreen"
-              >STEP 7</span
-            ><br />
-            <span style="font-size: 20px"
+            <span class="step-num">STEP 7</span>
+            <br />
+            <span class="step-cntnt"
               >Endorse Admission and Discharge <br />Chart to ER nurse</span
             >
           </p>
@@ -524,19 +424,15 @@
 
         <div class="box-p2">
           <p>
-            <span style="font-size: 2em; font-weight: bold; color: darkgreen"
-              >STEP 3</span
-            ><br />
-            <span style="font-size: 20px"
+            <span class="step-num">STEP 3</span><br />
+            <span class="step-cntnt"
               >Double checks details filled up in Admission Forms</span
             >
           </p>
-          <br />
+
           <p>
-            <span style="font-size: 2em; font-weight: bold; color: darkgreen"
-              >STEP 6</span
-            ><br />
-            <span style="font-size: 20px"
+            <span class="step-num">STEP 6</span><br />
+            <span class="step-cntnt"
               >Advice folk to proceed to Philhealth/HMO Section</span
             >
           </p>
@@ -545,50 +441,46 @@
     </div>
 
     <div class="patient">
-      <p style="font-size: 2.2em; padding-left: 12vw">VISITING HOUR</p>
-      <p style="font-size: 20px; color: darkgreen; padding-left: 12vw">
-        Visiting hours are to be strictly observed as follows:
-      </p>
+      <div class="ptnt-box">
+        <p class="vst-hr">VISITING HOUR:</p>
+        <p class="vst-cntnt">
+          Visiting hours are to be strictly observed as follows.
+        </p>
+      </div>
 
       <div class="p-holder1">
-        <div class="box-p2 np">
-          <p style="font-weight: bold">MONDAY - SUNDAY</p>
-          <p>08:00 AM - 08:00 PM</p>
+        <div class="box-p2 border border-secondary">
+          <p class="p-2" style="font-weight: bold">MONDAY - SUNDAY</p>
+          <hr />
+          <p class="p-2">08:00 AM - 08:00 PM</p>
         </div>
       </div>
     </div>
 
     <div class="patient">
-      <p style="font-size: 2.2em; padding-left: 12vw">PHILHEALTH</p>
-      <p style="font-size: 20px; color: darkgreen; padding-left: 12vw">
-        CUSTOMER ASSISTANCE
-      </p>
+      <div class="ptnt-box">
+        <p class="phth">PHILHEALTH:</p>
+        <p class="ca">CUSTOMER ASSISTANCE.</p>
+      </div>
 
       <div class="p-holder">
-        <div class="box-p2 np">
-          <p style="font-size: 2em; font-weight: bold">CLIENT STEPS</p>
-          <br />
+        <div class="box-p2 border border-secondary m-3 p-2">
+          <p>CLIENT STEPS</p>
           <p>- Sign in the Client Log Sheet</p>
-          <br />
           <p>- Verbalize the nature of inquiry</p>
-          <br />
           <p>- Provide necessary supporting documents</p>
         </div>
 
-        <div class="box-p2 np">
-          <p style="font-size: 2em; font-weight: bold">AGENCY ACTION</p>
-          <br />
+        <div class="box-p2 border border-secondary m-3 p-2">
+          <p>AGENCY ACTION</p>
           <p>- Give the log sheet to the client</p>
-          <br />
           <p>- Analyze the nature of the client's inquiry</p>
-          <br />
           <p>- Answer the client</p>
         </div>
 
-        <div class="box-p2 np">
-          <p style="font-size: 2em; font-weight: bold">PERSON RESPONSIBLE</p>
-          <br />
-          <p>- P-CARES (PhilHealth Customer Assistance)</p>
+        <div class="box-p2 border border-secondary m-3 p-2">
+          <p>PERSON RESPONSIBLE</p>
+          <p>- P - CARES PhilHealth Customer Assistance</p>
         </div>
       </div>
     </div>
@@ -601,47 +493,11 @@
 
     <!-- script js -->
     <script src="js/header&drawer-menu.js"></script>
+    <script src="js/include-html&scroll-effect.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
       async
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      // Wrap in an IIFE (Immediately Invoked Function Expression)
-      (async function () {
-        const elements = document.querySelectorAll("[include-html]");
-        for (const el of elements) {
-          const file = el.getAttribute("include-html");
-          try {
-            const response = await fetch(file);
-            if (response.ok) {
-              const text = await response.text();
-              el.innerHTML = text;
-
-              // Execute scripts within the injected content
-              const scripts = el.querySelectorAll("script");
-              scripts.forEach((script) => {
-                const newScript = document.createElement("script");
-                if (script.src) {
-                  newScript.src = script.src;
-                  newScript.async = false;
-                } else {
-                  newScript.text = script.textContent;
-                }
-                document.body.appendChild(newScript);
-              });
-            } else {
-              el.innerHTML = "Content not found.";
-            }
-          } catch (error) {
-            console.error("Error including HTML:", error);
-          }
-        }
-      })();
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
