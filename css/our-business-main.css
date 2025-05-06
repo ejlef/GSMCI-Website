@@ -6,8 +6,22 @@
   font-weight: bold;
 }
 
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+  background-color: whitesmoke;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
 .our-business {
-  margin: 5%;
   text-align: center;
 }
 
@@ -42,23 +56,42 @@
   color: black;
 }
 
-@media (max-width: 769px) {
+/* Responsive Design */
+@media (max-width: 2561px) {
   .content-business p {
-    text-align: left;
-    padding: 0 1% 0 4%;
-    font-size: 1.3em;
+    padding: 2vh 15vw 5vh 16.5vw;
+    font-size: 1.5vw;
   }
+
   .our-business h1 {
-    font-size: 3.5em;
+    font-size: 2.5vw;
   }
 }
-@media (max-width: 426px) {
+
+@media (max-width: 1440px) {
+  .content-business p {
+    padding: 2vh 10vw 5vh 11.5vw;
+  }
+}
+
+@media (max-width: 769px) {
+  /* .our-business {
+    margin: 10% 3% 3% 3%;
+  } */
+
   .our-business h1 {
     font-size: 8vw;
   }
 
   .content-business p {
     padding: 0.5vh 5vw 5vh 6.5vw;
-    font-size: 4vw;
+    font-size: 4.5vw;
   }
 }
+
+/* @media (max-width: 426px) {
+  .content-business p {
+    padding: 0.5vh 5vw 5vh 6.5vw;
+    font-size: 4vw;
+  }
+} */

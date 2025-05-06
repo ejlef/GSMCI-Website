@@ -6,15 +6,29 @@
   font-weight: bold;
 }
 
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+  background-color: whitesmoke;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
 .board-of-directors {
-  margin: 5%;
+  margin: 3%;
   text-align: center;
 }
 
 .board-of-directors h1 {
   font-family: "AppleGaramond-Bold";
   color: darkgreen;
-  padding: 0%;
   margin: 0%;
 }
 
@@ -22,7 +36,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 2%;
 }
 
 .box-img1 img {
@@ -30,25 +43,23 @@
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.35);
-  /* margin: 1%; */
   padding: 0.5%;
 }
 
 .brdofdrk-box1 div {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
   flex: 300px;
-  padding: 4%;
 }
 
 .name1 {
-  font-size: 1.5em;
   font-weight: bold;
   display: block;
 }
 
 .title1 {
-  font-size: 1.2em;
   color: #555;
   display: block;
 }
@@ -59,18 +70,11 @@
   text-align: left;
 }
 
-.details1 {
-  font-family: "Roboto";
-  font-size: 1.5em;
-  line-height: 1.6;
-  text-align: left;
-  padding: 2.5% 0 0 3%;
-}
-
 .hdi1 {
   display: none !important;
 }
 
+/* effect */
 .blur-up {
   filter: blur(20px);
   transition: filter 0.3s ease-out;
@@ -83,31 +87,49 @@
 
 /* Responsive Design */
 @media (max-width: 2561px) {
-  .details1 {
-    font-size: 1.3em;
+  .board-of-directors h1 {
+    font-size: 2.5vw;
   }
+
   .box-img1 img {
-    width: 75%;
+    width: 80%;
+  }
+
+  .brdofdrk-box1 {
+    padding: 5% 10% 5% 10%;
+  }
+
+  .name1 {
+    font-size: 2vw;
+  }
+
+  .title1 {
+    font-size: 1.5vw;
+  }
+
+  .details2 {
+    font-size: 1.4vw;
   }
 }
 
-@media (max-width: 1441px) {
-  .details1 {
-    font-size: 1.2em;
-  }
-  .box-img1 img {
-    width: 90%;
-  }
-}
+/* @media (max-width: 1441px) {
+
+} */
 
 @media (max-width: 1025px) {
-  .details1 {
-    font-size: 1em;
-  }
   .box-img1 img {
     width: 100%;
   }
+
+  .brdofdrk-box1 div {
+    padding: 4%;
+  }
+
+  .details2 {
+    font-size: 1.5vw;
+  }
 }
+
 @media (max-width: 769px) {
   .hdi1 {
     display: block !important;
@@ -121,21 +143,16 @@
     padding: 2.5%;
   }
 
+  .board-of-directors h1 {
+    font-size: 3em;
+  }
+
   .name1 {
     font-size: 1.5em;
   }
 
   .title1 {
     font-size: 1em;
-  }
-
-  .details1 p {
-    font-size: 1em;
-    text-align: left;
-  }
-
-  .board-of-directors h1 {
-    font-size: 3em;
   }
 }
 
@@ -161,7 +178,7 @@
     text-align: center;
   }
 
-  .details1 p {
+  .details2 {
     font-size: 4vw;
   }
 }

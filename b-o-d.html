@@ -3,6 +3,8 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    gap: 5%;
     padding: 0 6.5vw 5vh 6.5vw;
   }
 
@@ -36,7 +38,42 @@
     box-shadow: 3px 3px 3px #ccc;
   }
 
+  .img-box1 div {
+    background-color: lightgray;
+  }
+  .bodi-dctrs {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  img.loaded {
+    visibility: visible;
+    opacity: 1;
+    box-shadow: 2px 3px 8px 0px #a5a5a5;
+    transition: opacity 1s ease-in-out;
+  }
+
   /* Responsive Design */
+  /* Large screen (2560px and above) */
+  @media (min-width: 2560px) {
+    .gsmcitext {
+      font-size: 1.2vw;
+    }
+
+    .dtr-p {
+      font-size: 1.5vw;
+    }
+
+    .corpbox {
+      padding: 0 5vw 5vh 5vw;
+    }
+
+    .imgdrctrs-box img {
+      max-height: 800px;
+      width: auto;
+    }
+  }
+
   @media (max-width: 768px) {
     .gsmcitext {
       font-size: 4vw;
@@ -66,10 +103,6 @@
 
     .corpbox {
       flex-direction: column;
-    }
-
-    .imgdrctrs-box img {
-      height: auto;
     }
   }
 </style>
@@ -140,11 +173,17 @@
   <div class="img-box1">
     <div class="imgdrctrs-box">
       <img
-        src="https://github.com/ejlef/GSMCI/blob/main/Board%20of%20Directors/directors1.png?raw=true"
-        data-src="https://github.com/ejlef/GSMCI/blob/main/Board%20of%20Directors/directors1.png?raw=true"
-        class="lazyload blur-up"
+        src="GSMCI-Pictures/Board of Directors/directors1.png"
+        data-src="GSMCI-Pictures/Board of Directors/directors1.png"
+        class="lazyload blur-up bodi-dctrs"
         alt="board-directors"
       />
     </div>
   </div>
 </div>
+
+<script>
+  document.querySelectorAll(".bodi-dctrs").forEach((img) => {
+    img.onload = () => img.classList.add("loaded");
+  });
+</script>

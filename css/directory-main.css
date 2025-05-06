@@ -6,6 +6,21 @@
   font-weight: bold;
 }
 
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+  background-color: whitesmoke;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
 .content-1 {
   display: flex;
   flex-direction: column;
@@ -16,16 +31,16 @@
 
 .drtry {
   margin: 5%;
-  font-size: 4vw;
+  font-size: 3vw;
 }
 
 .box2 {
-  padding: 5%;
+  padding: 1% 15%;
 }
 
 .t-name {
   color: darkgreen;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
 }
 
@@ -53,12 +68,13 @@
 .wrds {
   font-family: "Times New Roman", Times, serif;
   font-size: 1.3em;
+  line-height: 3;
 }
 
 .dctrclnc {
   margin: 5%;
   text-align: center;
-  font-size: 3.5vw;
+  font-size: 3vw;
 }
 
 .d-holder {
@@ -100,7 +116,7 @@
 }
 
 .docbox-1 {
-  height: 370px;
+  height: 400px;
   width: 300px;
   background: whitesmoke;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -110,6 +126,7 @@
     opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
   text-align: center;
+  margin: 1%;
 }
 
 .docbox-1:hover {

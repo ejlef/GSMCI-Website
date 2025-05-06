@@ -6,6 +6,21 @@
   font-weight: bold;
 }
 
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+  background-color: whitesmoke;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
 .patient {
   margin: 5%;
 }
@@ -78,7 +93,7 @@
 
 .box-p,
 .box-p2 {
-  width: 300px;
+  width: 500px;
 }
 
 .step-num {
@@ -92,6 +107,20 @@
 }
 
 /* Responsive Design */
+
+/* Responsive Design */
+@media (max-width: 2561px) {
+  .rightsandresp {
+    font-size: 1.5vw;
+  }
+}
+
+@media (max-width: 1440px) {
+  .rightsandresp {
+    font-size: 2vw;
+  }
+}
+
 @media (max-width: 426px) {
   .ptntgud {
     font-size: 8vw;

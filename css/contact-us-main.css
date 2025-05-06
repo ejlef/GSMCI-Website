@@ -6,15 +6,32 @@
   font-weight: bold;
 }
 
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+  background-color: whitesmoke;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
 .cnctus-box {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
   /* margin: 6.5%; */
 }
 
 .box-10 {
   display: flex;
-  margin: 5%;
+  margin: 2%;
 }
 
 .box-10 div {

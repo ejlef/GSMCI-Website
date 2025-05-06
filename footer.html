@@ -3,45 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GSMCI Footer</title>
+    <title>Responsive GSMCI Footer</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <style>
       /* Base Styling */
+      :root {
+        --footer-bg-color: #000;
+        --footer-text-color: #fff;
+        --footer-link-color: #ccc;
+        --footer-link-hover-color: #fff;
+        --footer-gap: 20px;
+      }
+
       .site-footer {
-        background-color: #000000;
-        color: #fff;
+        background-color: var(--footer-bg-color);
+        color: var(--footer-text-color);
         font-family: Arial, sans-serif;
-        padding: 50px 20px;
+        padding: 40px var(--footer-gap);
         line-height: 1.5;
         box-shadow: 0px -1.5px 20px 5px #6c757d;
       }
 
       .footer-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center; /* Center horizontally */
-        max-width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: var(--footer-gap);
+        max-width: 1400px;
         margin: 0 auto;
-        gap: 20px;
-        text-align: center; /* Center text */
-      }
-
-      .footer-section {
-        flex: 1;
-        min-width: 200px;
-        margin-bottom: 20px;
+        text-align: center;
       }
 
       .footer-section h2 {
-        font-size: 1.125rem;
+        font-size: 1.25rem;
         font-weight: bold;
-        color: #fff;
+        color: var(--footer-text-color);
         margin-bottom: 10px;
         text-transform: uppercase;
-        font-family: "AppleGaramond-Bold";
       }
 
       .footer-section ul {
@@ -55,88 +55,84 @@
       }
 
       .footer-section ul li a {
-        color: #ccc;
+        color: var(--footer-link-color);
         text-decoration: none;
         font-size: 0.875rem;
-        font-family: "Roboto", sans-serif;
-        font-weight: 400;
+        transition: color 0.3s ease;
       }
 
       .footer-section ul li a:hover {
-        color: #fff;
-        text-decoration: underline;
+        color: var(--footer-link-hover-color);
       }
 
       /* Social Links */
       .social-links {
         display: flex;
-        justify-content: center; /* Center horizontally */
-        gap: 20px;
+        justify-content: center;
+        gap: 15px;
         margin-top: 15px;
       }
 
-      .social-links li a img {
-        width: 24px;
-        height: 24px;
-        transition: opacity 0.3s ease;
+      .social-links li a {
+        font-size: 1.5rem;
+        color: var(--footer-link-color);
+        transition: color 0.3s ease;
       }
 
-      .social-links li a:hover img {
-        opacity: 0.7;
+      .social-links li a:hover {
+        color: var(--footer-link-hover-color);
       }
 
       /* Branding Section */
       .footer-branding {
-        text-align: center; /* Center text */
+        text-align: center;
         margin-top: 30px;
-        width: 100%; /* Full width */
-        display: flex;
-        flex-direction: column; /* Stack items */
-        align-items: center; /* Center items */
       }
 
       .footer-branding img {
-        max-width: 160px;
+        max-width: 150px;
         height: auto;
       }
 
       .footer-branding h1 {
-        font-size: 1.25rem;
-        color: #fff;
+        font-size: 1.5rem;
         margin-top: 10px;
         font-weight: 600;
       }
 
       .footer-branding p {
-        font-size: 0.75rem;
-        color: #ccc;
+        font-size: 1rem;
+        color: var(--footer-link-color);
         margin-top: 10px;
       }
 
-      /* Large Devices */
-      @media (min-width: 769px) {
-        .footer-section {
-          flex: 1;
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .footer-container {
+          grid-template-columns: 1fr;
+          gap: 15px;
+        }
+
+        .footer-section h2 {
+          font-size: 1.125rem;
+        }
+
+        .footer-section ul li a {
+          font-size: 0.875rem;
+        }
+
+        .footer-branding img {
+          max-width: 120px;
+        }
+
+        .footer-branding h1 {
+          font-size: 1.25rem;
         }
       }
 
-      @media (max-width: 426px) {
+      @media (max-width: 480px) {
         .footer-container {
-          flex-direction: column;
-          text-align: center;
-        }
-
-        .footer-section {
-          width: 100%;
-          margin-bottom: 20px;
-        }
-
-        .social-links {
-          justify-content: center;
-        }
-
-        .footer-branding {
-          margin-top: 20px;
+          grid-template-columns: 1fr;
         }
 
         .site-footer {
@@ -144,37 +140,68 @@
         }
 
         .footer-section h2 {
-          font-size: 1.1rem;
+          font-size: 1rem;
         }
 
         .footer-section ul li a {
-          font-size: 0.875rem;
+          font-size: 0.75rem;
+        }
+
+        .footer-branding img {
+          max-width: 100px;
         }
 
         .footer-branding h1 {
-          font-size: 1.125rem;
+          font-size: 1rem;
         }
 
         .footer-branding p {
           font-size: 0.75rem;
         }
+      }
 
-        .social-links li a img {
-          width: 18px;
-          height: 18px;
+      @media (min-width: 1921px) {
+        .footer-container {
+          grid-template-columns: repeat(
+            4,
+            1fr
+          ); /* 4 columns on ultra-large screens */
+          gap: 40px;
+        }
+
+        .site-footer {
+          padding: 60px 80px;
+        }
+
+        .footer-section h2 {
+          font-size: 1.75rem;
+        }
+
+        .footer-section ul li a {
+          font-size: 1.125rem;
+        }
+
+        .social-links li a {
+          font-size: 2rem;
         }
 
         .footer-branding img {
-          max-width: 120px;
+          max-width: 200px;
+        }
+
+        .footer-branding h1 {
+          font-size: 2rem;
+        }
+
+        .footer-branding p {
+          font-size: 1.25rem;
         }
       }
     </style>
   </head>
-
   <body>
     <footer class="site-footer">
       <div class="footer-container">
-        <!-- Security & Brand Section -->
         <div class="footer-section">
           <h2>Resources</h2>
           <ul>
@@ -183,7 +210,7 @@
                 href="directory-main.html"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Find A Doctors</a
+                >Find A Doctor</a
               >
             </li>
             <li>
@@ -196,8 +223,6 @@
             </li>
           </ul>
         </div>
-
-        <!-- Website Section -->
         <div class="footer-section">
           <h2>Services</h2>
           <ul>
@@ -211,15 +236,12 @@
             </li>
           </ul>
         </div>
-
-        <!-- Get In Touch Section -->
         <div class="footer-section">
           <h2>Get In Touch</h2>
           <ul>
             <li><a href="contact-us-main.html">Contact Us</a></li>
             <li>
-              <a
-                href="https://www.google.com/maps/place/Guimaras+Specialist+Medical+Center,+Inc./@10.593169,122.601001,24954m/data=!3m1!1e3!4m6!3m5!1s0x33aeed18c8a73895:0xd9a9ea384be6a6fd!8m2!3d10.5931685!4d122.6010012!16s%2Fg%2F11sjg9pz5l?hl=fil&entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D"
+              <a href="https://maps.app.goo.gl/JsdiwSiXZEiLDsHv6"
                 >Maps & Directions</a
               >
             </li>
@@ -233,51 +255,32 @@
             </li>
           </ul>
         </div>
-
-        <!-- Follow Us Section -->
         <div class="footer-section">
           <h2>Follow Us</h2>
-          <!-- Social Media Icons: SVG Example -->
           <ul class="social-links">
             <li>
-              <a href="#" title="Instagram" aria-label="Instagram">
-                <i
-                  class="fab fa-instagram"
-                  style="font-size: 24px; color: #ccc"
-                ></i>
-              </a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
             </li>
             <li>
               <a
                 href="https://www.facebook.com/gsmciguimaras"
-                title="Facebook"
                 aria-label="Facebook"
-              >
-                <i
-                  class="fab fa-facebook"
-                  style="font-size: 24px; color: #ccc"
-                ></i>
-              </a>
+                ><i class="fab fa-facebook"></i
+              ></a>
             </li>
             <li>
-              <a href="#" title="YouTube" aria-label="YouTube">
-                <i
-                  class="fab fa-youtube"
-                  style="font-size: 24px; color: #ccc"
-                ></i>
-              </a>
+              <a href="#" aria-label="YouTube"
+                ><i class="fab fa-youtube"></i
+              ></a>
             </li>
           </ul>
         </div>
       </div>
-
-      <!-- Branding Section -->
       <div class="footer-branding">
         <a href="https://gsmci.com/" aria-label="GSMCI Website">
-          <img
-            src="https://github.com/ejlef/GSMCI-Pictures/blob/main/Logos/GSMCI%20Logo%20low.png?raw=true"
-            alt="Guimaras Specialist Medical Center Inc."
-          />
+          <img src="GSMCI-Pictures/Logos/GSMCI Logo low.png" alt="GSMCI Logo" />
         </a>
         <h1>Guimaras Specialist Medical Center Inc.</h1>
         <p>© 2025 GSMCI-IT Website Developer</p>

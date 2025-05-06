@@ -6,43 +6,70 @@
   font-weight: bold;
 }
 
-.services-title {
-  margin: 5%;
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* General body styling */
+body {
+  background-color: whitesmoke;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+/* Title Section */
+.services-title {
+  margin: 3%;
+  text-align: center;
+}
+
+.rsvsc {
+  font-family: "AppleGaramond-Bold";
+  font-size: 3vw;
+  font-weight: bold;
+  color: darkgreen;
+  margin-bottom: 0.5rem;
+}
+
+.lsevrydpt {
+  font-size: 2vw;
+  color: darkgreen;
+  margin-bottom: 3%;
+}
+
+/* Services Layout */
 .first-services {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
 }
+
 .holder-services {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 5% 5% 5%;
-}
-
-.holder-services div {
-  display: flex;
-  flex-direction: column;
-  flex: 300px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
   width: 100%;
-  margin: 5%;
-}
-
-.holder-services p {
-  font-family: "Roboto";
+  padding: 0.5rem;
 }
 
 .serbox-1 {
-  height: auto;
-  padding: 2rem;
+  padding: 1rem;
   border: 1px solid gray;
   background: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.serbox-1:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .sercap {
@@ -55,34 +82,73 @@
   margin-bottom: 0.5rem;
 }
 
-.rsvsc {
-  font-family: "AppleGaramond-Bold";
-  font-size: 4vw;
-  font-weight: bold;
-  text-align: center;
-  color: darkgreen;
-  margin: 0;
+/* Text Styling */
+.holder-services p {
+  font-family: "Roboto";
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
 
-.lsevrydpt {
-  font-size: 20px;
-  color: darkgreen;
-  text-align: center;
-  margin-bottom: 3%;
-}
-
-@media (max-width: 769px) {
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
   .rsvsc {
-    font-size: 8vw;
-  }
-}
-
-@media (max-width: 426px) {
-  .rsvsc {
-    font-size: 8vw;
+    font-size: 2.25rem;
   }
 
   .lsevrydpt {
-    font-size: 4.5vw;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .rsvsc {
+    font-size: 2rem;
+  }
+
+  .lsevrydpt {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .rsvsc {
+    font-size: 1.75rem;
+  }
+
+  .lsevrydpt {
+    font-size: 0.8rem;
+  }
+
+  .serbox-1 {
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .rsvsc {
+    font-size: 1.5rem;
+  }
+
+  .lsevrydpt {
+    font-size: 0.75rem;
+  }
+
+  .serbox-1 {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .holder-services {
+    grid-template-columns: 1fr; /* Single-column layout */
+    gap: 0.5rem;
+  }
+
+  .sercap {
+    font-size: 1rem;
+    padding: 0.4rem;
+  }
+
+  .holder-services p {
+    font-size: 0.75rem;
   }
 }

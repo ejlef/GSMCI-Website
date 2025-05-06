@@ -6,6 +6,21 @@
   font-weight: bold;
 }
 
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+  background-color: whitesmoke;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
 .n-and-u p,
 .evnts {
   margin-bottom: 0%;
@@ -15,24 +30,20 @@
   font-family: "AppleGaramond-Bold";
   text-align: center;
   color: darkgreen;
-  margin: 5%;
 }
 
 .affidavit-box {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 5%;
   margin: 5%;
 }
 
 .img1,
 .img2 {
   width: 45%;
-  box-shadow: 1px 2px 10px 1px #aaa;
+  box-shadow: 2px 2px 5px 0px #aaaaaa;
   border: solid 2px black;
-}
-
-.news-box {
-  margin: 10%;
 }
 
 .news-title,
@@ -42,7 +53,8 @@
   font-family: "AppleGaramond-Bold";
 }
 
-.news-cnt, .nt1{
+.news-cnt,
+.nt1 {
   font-family: "Roboto";
 }
 
@@ -91,7 +103,6 @@
 
 .box-1 img {
   width: 100%;
-  padding: 5%;
 }
 
 .oopc1 {
@@ -100,17 +111,13 @@
   color: darkgreen;
 }
 
-.bknw {
+/* .bknw {
   color: #fff;
   background-color: darkgreen;
   padding: 5%;
   font-size: 1.2em;
   font-weight: bold;
-}
-
-.hd1 {
-  display: none;
-}
+} */
 
 /* blur img effect */
 .blur-up {
@@ -231,13 +238,92 @@
 /* Modal Content (image) End */
 
 /* Responsive Design */
-@media (max-width: 426px) {
+@media (max-width: 2561px) {
   .n-and-u {
-    font-size: 8vw;
+    font-size: 3vw;
+  }
+
+  .box1 {
+    margin: 3% 15%;
+  }
+
+  .img1,
+  .img2 {
+    width: auto;
+  }
+
+  .n-and-u {
+    margin: 3% 0 0 0;
+  }
+
+  .news-box {
+    margin: 5% 15% 5% 15%;
   }
 
   .news-title {
+    font-size: 3vw;
+  }
+
+  .highlight1 {
+    font-size: 2.5vw;
+  }
+
+  .news-cnt {
+    font-size: 2vw;
+  }
+
+  .evnts {
+    font-size: 3vw;
+  }
+
+  .oopc1 {
+    font-size: 2vw;
+  }
+
+  .nt1 {
+    font-size: 1.5vw;
+  }
+}
+
+@media (max-width: 1441px) {
+  .img1,
+  .img2 {
+    width: 30%;
+  }
+
+  .news-title {
+    font-size: 2vw;
+  }
+
+  .highlight1 {
+    font-size: 1.5vw;
+  }
+
+  .news-cnt {
+    font-size: 1vw;
+  }
+
+  .evnts {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 769px) {
+  .news-title {
     font-size: 7vw;
+  }
+
+  .n-and-u {
+    font-size: 6vw;
+  }
+
+  .img1,
+  .img2 {
+    width: 40%;
+  }
+
+  .box1 {
+    margin: 3%;
   }
 
   .news-cnt {
@@ -248,13 +334,8 @@
     font-size: 6.5vw;
   }
 
-  .prev,
-  .next {
-    display: none;
-  }
-
-  .btn-11 {
-    font-size: 0.9rem;
+  .news-box {
+    margin: 7.5%;
   }
 
   .evnts {
@@ -267,6 +348,21 @@
 
   .nt1 {
     font-size: 4vw;
+  }
+}
+
+@media (max-width: 426px) {
+  .n-and-u {
+    font-size: 8vw;
+  }
+
+  .prev,
+  .next {
+    display: none;
+  }
+
+  .btn-11 {
+    font-size: 0.9rem;
   }
 
   .hd1 {

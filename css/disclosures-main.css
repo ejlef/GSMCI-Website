@@ -6,6 +6,21 @@
   font-weight: bold;
 }
 
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+  background-color: whitesmoke;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
 .disclosure-h1 {
   margin-top: 3%;
   margin-bottom: 3%;
@@ -27,7 +42,6 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-size: 2em;
   color: green;
   font-family: "Roboto";
 }
@@ -46,8 +60,8 @@
 }
 
 .img0 {
-  max-width: 90vw;
-  max-height: 400px;
+  /* max-width: 90vw;
+  max-height: 400px; */
   padding: 1%;
   margin: 0.5%;
   border: solid 2px darkgreen;
@@ -61,9 +75,8 @@
 
 .scfrm {
   font-family: "Roboto";
-  font-size: 1em;
   text-align: center;
-  margin: 5%;
+  margin-bottom: 0;
 }
 
 /* blur img effect */
@@ -183,7 +196,52 @@
 }
 
 /* Responsive Design */
+@media (max-width: 2560px) {
+  .disclosure-pic {
+    height: 50vh;
+    gap: 5%;
+  }
+
+  .scfrm {
+    font-size: 2vw;
+  }
+
+  .img0 {
+    height: 50vh;
+  }
+
+  .disclosure-h1 h1 {
+    font-size: 3vw;
+  }
+
+  .scencm {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 1440px) {
+  .disclosure-pic {
+    height: 90vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  .disclosure-pic {
+    height: 70vh;
+  }
+}
+
 @media (max-width: 768px) {
+  .img0 {
+    width: 90%;
+    height: 100%;
+  }
+
+  .disclosure-pic {
+    height: 100%;
+    gap: 10%;
+  }
+
   .prev,
   .next {
     display: none;

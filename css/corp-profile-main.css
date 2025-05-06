@@ -6,16 +6,30 @@
   font-weight: bold;
 }
 
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+  background-color: whitesmoke;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
 .about-us {
-  margin: 5%;
   text-align: center;
 }
 
 .about-us h1 {
   font-family: "AppleGaramond-Bold";
   color: darkgreen;
-  padding: 0%;
-  margin: 0%;
+  margin: 0;
+  padding: 0;
 }
 
 .content-profile {
@@ -25,18 +39,16 @@
 
 .content-profile p {
   font-family: "Roboto", serif;
-  font-size: 1.2em;
   hyphens: auto;
   line-height: 2;
-  padding: 0 10%;
-  margin: 0%;
+  margin: 0;
 }
 
 .content-profile p span {
   color: darkviolet;
 }
 
-/* Vision, Mission, Goals , Core Values,*/
+/* Vision, Mission, Goals, Core Values */
 .corevalues-box {
   display: flex;
   flex-direction: column;
@@ -53,16 +65,15 @@
 .box-vmgc {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
+  align-items: center;
   background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin: 20px;
-  width: 100%;
   max-width: 500px;
+  width: 100%;
 }
 
 .box-vmgc h2 {
@@ -89,8 +100,8 @@
 }
 
 .img1 {
-  max-width: 85vw;
-  max-height: 600px;
+  /* max-width: 85vw;
+  max-height: 600px; */
   box-shadow: 1px 2px 11px 2px #828282a6;
 }
 
@@ -161,61 +172,106 @@
 /* The Modal Img End */
 
 /* Responsive Design */
-@media (max-width: 1025px) {
+@media (max-width: 2560px) {
   .about-us h1 {
-    font-size: 3.5vw;
+    font-size: 3vw;
   }
 
   .content-profile p {
-    padding: 1vh 5vw 5vh 6.5vw;
+    padding: 2vh 15vw 5vh 16.5vw;
+    font-size: 1.5vw;
   }
 
   .box-vmgc {
-    max-width: 400px;
+    max-width: 35vw;
+    padding: 3%;
   }
 
   .box-vmgc h2 {
-    font-size: 3vw;
+    font-size: 2.5vw;
+  }
+
+  .box-vmgc p,
+  .box-vmgc li,
+  .box-vmgc div {
+    font-size: 1.5vw;
+  }
+
+  .img1 {
+    width: 70%;
+  }
+
+  .modal {
+    padding: 10vw 1% 0 1%;
+  }
+
+  .close {
+    font-size: 5vw;
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1440px) {
+  .content-profile p {
+    padding: 2vh 10vw 5vh 11.5vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .box-vmgc {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* .about-us {
+    margin: 10% 3% 3% 3%;
+  } */
+
   .about-us h1 {
     font-size: 8vw;
   }
 
   .content-profile p {
-    padding: 0.5vh 5vw 5vh 6.5vw;
-    font-size: 4vw;
+    padding: 0.5vh 5vw;
+  }
+
+  .content-profile p,
+  .box-vmgc li,
+  .box-vmgc div {
+    font-size: 4.5vw;
+  }
+
+  .box-vmgc {
+    max-width: 600px;
   }
 
   .box-vmgc h2 {
     font-size: 6vw;
   }
-}
 
-@media (max-width: 426px) {
   .box-vmgc p {
     font-size: 4vw;
   }
-
-  .about-us h1 {
-    font-size: 8vw;
+  .img1 {
+    width: 100%;
   }
 
+  .modal {
+    padding: 30vw 1% 0 1%;
+  }
+
+  .close {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 425px) {
   .box-vmgc h2 {
     font-size: 6.5vw;
   }
 
-  .content-profile p {
-    padding: 0.5vh 5vw 5vh 6.5vw;
-    font-size: 4vw;
-  }
-
-  .box-vmgc li {
-    font-size: 4vw;
-  }
-
+  .content-profile p,
+  .box-vmgc li,
   .box-vmgc div {
     font-size: 4vw;
   }

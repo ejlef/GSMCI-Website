@@ -6,6 +6,21 @@
   font-weight: bold;
 }
 
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+  background-color: whitesmoke;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
 .corp-governance {
   margin: 5%;
   text-align: center;
@@ -25,7 +40,7 @@
 .corp-governance h1 {
   font-family: "AppleGaramond-Bold";
   color: darkgreen;
-  font-size: 3.5vw;
+  font-size: 3vw;
   padding: 0%;
   margin: 0%;
 }
@@ -143,8 +158,7 @@
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 700px;
+  max-width: 70%;
 }
 
 /* Add Animation */
@@ -223,7 +237,35 @@
 /* Modal Content (image) End */
 
 /* Responsive Design */
+@media (max-width: 2560px) {
+  .manual-pic {
+    height: 50vh;
+    gap: 5%;
+  }
+
+  .modal-content {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .manual-pic {
+    height: 90vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  .manual-pic {
+    height: 70vh;
+  }
+}
+
 @media (max-width: 768px) {
+  .manual-pic {
+    height: 100%;
+    gap: 10%;
+  }
+
   .prev,
   .next {
     display: none;
@@ -247,6 +289,10 @@
 
   .imgdrctrs-box img {
     height: auto;
+  }
+
+  .modal-content {
+    max-width: 100%;
   }
 }
 
