@@ -6,6 +6,7 @@
 .board-of-directors h1 {
   font-family: "AppleGaramond-Bold";
   color: darkgreen;
+  font-size: 2vw;
   margin: 0%;
 }
 
@@ -13,14 +14,27 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 5% 10% 5% 10%;
 }
 
+/* .brdofdrk-box1 .details1 {
+  padding: 2%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 19%);
+} */
+
+
 .box-img1 img {
-  width: 70%;
+  width: 60%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 19%);
   padding: 0.5%;
+}
+
+.brdofdrk-box1 .box-img1 img:hover {
+  box-shadow: 0px 0px 20px 10px rgb(0 0 0 / 19%);
 }
 
 .brdofdrk-box1 div {
@@ -45,6 +59,11 @@
 .title1 {
   font-family: "AppleGaramond-Bold";
   text-align: left;
+  font-size: 1.3vw;
+}
+
+.details2 {
+  font-size: 1vw;
 }
 
 .hdi1 {
@@ -73,7 +92,7 @@
   }
 
   .brdofdrk-box1 {
-    padding: 5% 10% 5% 10%;
+    padding: 5% 15% 5% 15%;
   }
 
   .name1 {
@@ -85,7 +104,7 @@
   }
 
   .details2 {
-    font-size: 1.4vw;
+    font-size: 1.2vw;
   }
 }
 

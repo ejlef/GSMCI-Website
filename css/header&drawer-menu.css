@@ -11,7 +11,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 4rem;
+  padding: 1.5vh 6.5vw;
   background-color: transparent;
   top: 0;
   left: 0;
@@ -48,7 +48,7 @@ header {
 
 nav.desktop-nav {
   display: flex;
-  gap: 1rem;
+  gap: 3vw;
   justify-content: flex-end;
   align-items: center;
   flex-grow: 1;
@@ -58,7 +58,7 @@ nav.desktop-nav a {
   font-family: "Roboto";
   text-decoration: none;
   color: #333;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   font-weight: bold;
   transition: color 0.3s ease, transform 0.3s ease;
   padding: 0.5rem;
@@ -93,15 +93,16 @@ a.dropdown-toggle[aria-expanded="true"]::after {
 
 .dropdown-menu {
   padding: 15%;
-  transform: translate3d(0px, 54px, 0px) !important;
+  width: 20vw;
 }
 
 ul.dropdown-menu.drp1.show {
-  padding: 10% !important;
+  padding: 20% !important;
 }
 
 ul.dropdown-menu.drp1.show a {
   font-family: "Roboto";
+  font-size: 1vw;
 }
 
 .btn-group > :not(.btn-check:first-child) + .btn {
@@ -166,10 +167,6 @@ ul.dropdown-menu.drp1.show a {
   filter: blur(0);
 }
 /* blur img effect end */
-
-nav.desktop-nav a {
-  font-size: 2vw;
-}
 
 /* Responsive Design */
 @media (max-width: 2561px) {

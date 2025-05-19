@@ -28,6 +28,7 @@ body {
 .our-business h1 {
   font-family: "AppleGaramond-Bold";
   color: darkgreen;
+  font-size: 2vw;
   margin: 0%;
   padding: 0%;
 }
@@ -45,6 +46,8 @@ body {
   line-height: 2;
   padding: 0 10%;
   margin: 0%;
+  padding: 2vh 15vw 5vh 16.5vw;
+  font-size: 1.3vw;
 }
 
 .content-business p span {
@@ -70,7 +73,7 @@ body {
 
 @media (max-width: 1440px) {
   .content-business p {
-    padding: 2vh 10vw 5vh 11.5vw;
+    padding: 2vh 15vw 5vh 16.5vw;
   }
 }
 

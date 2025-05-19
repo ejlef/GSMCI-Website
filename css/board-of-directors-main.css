@@ -29,6 +29,7 @@ body {
 .board-of-directors h1 {
   font-family: "AppleGaramond-Bold";
   color: darkgreen;
+  font-size: 2vw;
   margin: 0%;
 }
 
@@ -39,7 +40,7 @@ body {
 }
 
 .box-img1 img {
-  width: 70%;
+  width: 60%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.35);
@@ -68,6 +69,11 @@ body {
 .title1 {
   font-family: "AppleGaramond-Bold";
   text-align: left;
+  font-size: 1.3vw;
+}
+
+.details2 {
+  font-size: 1vw;
 }
 
 .hdi1 {
@@ -96,7 +102,7 @@ body {
   }
 
   .brdofdrk-box1 {
-    padding: 5% 10% 5% 10%;
+    padding: 5% 15% 5% 15%;
   }
 
   .name1 {
@@ -108,7 +114,7 @@ body {
   }
 
   .details2 {
-    font-size: 1.4vw;
+    font-size: 1.2vw;
   }
 }
 
