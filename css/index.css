@@ -122,14 +122,14 @@ body {
 } */
 
 .i-n a {
-  /* display: flex;
-  flex-direction: row;
-  align-items: center; */
+  display: flex;
+  align-items: center;
   font-size: 1.5vw;
   font-family: "Roboto";
   gap: 1%;
   text-shadow: 1px 1px 1px white;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .fa-arrow-circle-right {

@@ -50,7 +50,7 @@ function toggleIcon() {
 //   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 // });
 
-// console.log("Navbar Is Working!");
+
 
 // let lastScrollTop = 0;
 // const header = document.getElementById("header");
@@ -80,7 +80,7 @@ function toggleIcon() {
 //   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 // });
 
-// console.log("Navbar behavior updated!");
+
 
 // let lastScrollTop = 0;
 // let lastTime = 0; // To track the time of the last scroll event
@@ -135,7 +135,6 @@ function toggleIcon() {
 //   lastTime = currentTime;
 // });
 
-// console.log("Navbar updated to appear only on fast scrolls!");
 
 let lastScrollTop = 0;
 let lastTime = 0; // To track the time of the last scroll event
@@ -190,4 +189,4 @@ window.addEventListener("scroll", () => {
   lastTime = currentTime;
 });
 
-console.log("Navbar Is Working...");
+// console.log("Navbar Is Working...");

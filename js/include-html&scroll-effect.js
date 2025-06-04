@@ -52,7 +52,7 @@ function animateContent() {
         y: 0,
         opacity: 1,
         duration: 1,
-        ease: "power2.out",
+        ease: "power3.Out",
         scrollTrigger: {
           trigger: content,
           start: "top 80%",
