@@ -60,6 +60,7 @@ function animateContent() {
           toggleActions: "play none none reverse",
           scrub: false,
           markers: false,
+          once: true,
         },
       }
     );

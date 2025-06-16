@@ -15,7 +15,7 @@
 
 /* General body styling */
 body {
-  background-color: whitesmoke;
+  background: conic-gradient(from 36deg, #18c5ff2b, #fdfdfd00, #64ffbe21);
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
@@ -43,7 +43,7 @@ body {
   font-family: "Roboto", serif;
   font-size: 1.2em;
   hyphens: auto;
-  line-height: 2;
+  line-height: 2.5;
   padding: 0 10%;
   margin: 0%;
   padding: 2vh 15vw 5vh 16.5vw;

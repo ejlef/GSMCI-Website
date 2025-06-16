@@ -15,7 +15,7 @@
 
 /* General body styling */
 body {
-  background-color: whitesmoke;
+  background-color: white !important;
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
@@ -191,7 +191,8 @@ body {
 /* disclosure end */
 
 .orgbox {
-  margin: 10%;
+  background: linear-gradient(45deg, #fdfdfd00 50%, #18c5ff2b 100%);
+  padding: 10%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -221,6 +222,18 @@ img.loaded {
   border: solid 3px darkgreen;
   box-shadow: 2px 3px 8px 0px #a5a5a5;
   transition: opacity 1s ease-in-out;
+}
+
+.bg-cp {
+  background: conic-gradient(from 116deg, #18c5ff2b, #fdfdfd00, #64ffbe21);
+}
+
+.bg-ob {
+  background: conic-gradient(from 116deg, #18c5ff2b, #fdfdfd00, #31ffa921);
+}
+
+.bg-hp {
+  background: linear-gradient(45deg, #fdfdfd00 50%, #18c5ff2b 100%);
 }
 
 /* Responsive Design */
