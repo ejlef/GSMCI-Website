@@ -1,4 +1,3 @@
-// Import .html
 (async function () {
   const elements = document.querySelectorAll("[include-html]");
   for (const el of elements) {
@@ -12,20 +11,20 @@
         // Execute scripts within the injected content
         const scripts = el.querySelectorAll("script");
         scripts.forEach((script) => {
-          const newScript = document.createElement("script");
-          if (script.src) {
-            newScript.src = script.src;
-            newScript.async = false;
-          } else {
-            newScript.text = script.textContent;
+          if (!document.querySelector(`script[src="${script.src}"]`)) {
+            const newScript = document.createElement("script");
+            if (script.src) {
+              newScript.src = script.src;
+              newScript.async = false;
+            } else {
+              newScript.text = script.textContent;
+            }
+            document.body.appendChild(newScript);
           }
-          document.body.appendChild(newScript);
         });
 
         // Initialize animations after content is loaded
-        animateContent();
-        // animateContent1();
-        // initDesktopAnimations();
+        requestAnimationFrame(animateContent); // Use requestAnimationFrame for better timing
       } else {
         el.innerHTML = "Content Not Found.";
       }
@@ -35,37 +34,41 @@
   }
 })();
 
-// GSAP animation function1
+// GSAP animation function
 function animateContent() {
   const contents = document.querySelectorAll(
     ".disclosure, .permit-box, .about-us, .content-profile, .box-vmgc, .our-business, .content-business, .orgbox, .board-of-directors"
   );
 
   contents.forEach((content) => {
-    gsap.fromTo(
-      content,
-      {
-        y: 100,
-        opacity: 0,
-      },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 1,
-        ease: "power3.Out",
-        scrollTrigger: {
-          trigger: content,
-          start: "top 80%",
-          end: "top 50%",
-          toggleActions: "play none none reverse",
-          scrub: false,
-          markers: false,
-          once: true,
+    if (!content.dataset.animated) {
+      content.dataset.animated = "true"; // Prevent duplicate animations
+      gsap.fromTo(
+        content,
+        {
+          y: 100,
+          opacity: 0,
         },
-      }
-    );
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          ease: "power3.Out",
+          scrollTrigger: {
+            trigger: content,
+            start: "top 80%",
+            end: "top 50%",
+            toggleActions: "play none none reverse",
+            scrub: false,
+            markers: false,
+            once: true,
+          },
+        }
+      );
+    }
   });
 }
+
 
 // // GSAP animation function2
 // function animateContent1() {
