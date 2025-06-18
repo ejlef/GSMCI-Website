@@ -30,10 +30,9 @@ body {
   top: 0;
   left: 0;
   text-align: center;
-  background-color: black !important;
-  background: url("https://cdn.dribbble.com/userupload/23844310/file/original-d5a514c1185985fc387545b19ac0fa12.gif")
-    center no-repeat;
-  background-size: cover;
+  background-color: white !important;
+  background: url("../logo-load.gif") center no-repeat;
+  background-size: 50% 50%;
   z-index: 99999;
 }
 
