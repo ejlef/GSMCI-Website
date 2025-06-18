@@ -25,6 +25,7 @@
 } */
 
 .box-img1 img {
+  background: white;
   width: 60%;
   height: auto;
   border-radius: 10px;
