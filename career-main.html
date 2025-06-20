@@ -48,14 +48,16 @@
       .content-1 {
         display: flex;
         justify-content: center;
-        margin: 5%;
+        padding: 1% 5%;
       }
 
-      .dv {
-        padding: 2%;
+      .content-1 img {
+        width: 40%;
       }
 
       .ec {
+        margin-top: 1%;
+        text-align: center;
         font-family: "AppleGaramond-Bold";
         color: darkgreen;
       }
@@ -63,6 +65,7 @@
       .cnt {
         font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
       }
+
       /* Responsive Design */
       @media (max-width: 2561px) {
         .ec {
@@ -72,7 +75,25 @@
           font-size: 2.3vw;
         }
       }
+
+      @media (max-width: 1024px) {
+        .content-1 img {
+          width: 60%;
+        }
+
+        .ec {
+          font-size: 5vw;
+        }
+        .cnt {
+          font-size: 3.5vw;
+        }
+      }
+
       @media (max-width: 426px) {
+        .content-1 img {
+          width: 100%;
+        }
+
         .ec {
           font-size: 8vw;
         }
@@ -251,16 +272,21 @@
       </div>
     </div>
     <!-- Mobile Navigation End -->
+    <p class="ec">EXPLORE CAREER</p>
     <div class="content-1">
-      <div class="dv">
-        <p class="ec">EXPLORE CAREER</p>
-        <div class="cnt">
-          Uncover exciting opportunities and unlock <br />your potential with
-          us.Join us and be a part <br />of a team that values innovation,
-          dedication,<br />
-          and professional development.
-        </div>
-      </div>
+      <img
+        src="GSMCI-Pictures/hiring.jpg"
+        alt="hiring"
+        class="lazyload blur-up"
+        data-src="GSMCI-Pictures/hiring.jpg"
+        loading="eager"
+      />
+      <!-- <div class="cnt">
+        Uncover exciting opportunities and unlock <br />your potential with
+        us.Join us and be a part <br />of a team that values innovation,
+        dedication,<br />
+        and professional development.
+      </div> -->
     </div>
 
     <div include-html="line.html"></div>
