@@ -56,8 +56,8 @@ function animateContent() {
           ease: "power3.Out",
           scrollTrigger: {
             trigger: content,
-            start: "top 80%",
-            end: "top 50%",
+            start: "top 70%",
+            end: "top 40%",
             toggleActions: "play none none reverse",
             scrub: false,
             markers: false,
@@ -68,7 +68,6 @@ function animateContent() {
     }
   });
 }
-
 
 // // GSAP animation function2
 // function animateContent1() {
