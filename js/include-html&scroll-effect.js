@@ -59,7 +59,7 @@ function animateContent() {
             start: "top 90%",
             end: "top 70%",
             toggleActions: "play none none reverse",
-            scrub: false,
+            // scrub: false,
             markers: false,
             once: true,
           },

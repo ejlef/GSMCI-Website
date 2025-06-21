@@ -263,7 +263,7 @@
   async
 ></script>
 
-<script>
+<!-- <script>
   gsap.registerPlugin(ScrollTrigger);
 
   // Batch animations for better performance
@@ -281,6 +281,64 @@
           toggleActions: "play none none reverse",
           markers: false, // Set to true for debugging
           once: true,
+        },
+      });
+
+      // Animate .box-img1 (except .hdi2)
+      if (img) {
+        tl.fromTo(
+          img,
+          { y: 50, opacity: 0 },
+          { y: 0, opacity: 1, duration: 1, ease: "power2.out" }
+        );
+      }
+
+      // Animate .box-img1.hdi2
+      if (hdi2) {
+        tl.fromTo(
+          hdi2,
+          { y: 50, opacity: 0 },
+          { y: 0, opacity: 1, duration: 1, ease: "power2.out" },
+          "-=0.4" // Overlap with previous animation
+        );
+      }
+
+      // Animate .details1
+      if (detail) {
+        tl.fromTo(
+          detail,
+          { y: 50, opacity: 0 },
+          { y: 0, opacity: 1, duration: 1, ease: "power2.out" },
+          "-=0.4" // Overlap with previous animation
+        );
+      }
+    }
+  });
+</script> -->
+
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Optimized ScrollTrigger animations with a "data-animated" flag
+  gsap.utils.toArray(".brdofdrk-box1").forEach((box) => {
+    const img = box.querySelector(".box-img1:not(.hdi2)"); // Exclude .hdi2
+    const hdi2 = box.querySelector(".box-img1.hdi2"); // Target .hdi2
+    const detail = box.querySelector(".details1");
+
+    // Skip animation if the content is already animated
+    if (box.dataset.animated === "true") return;
+
+    if (img || hdi2 || detail) {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: box,
+          start: "top 40%",
+          end: "top 10%",
+          toggleActions: "play none none reverse",
+          markers: false, // Set to true for debugging
+          onEnter: () => (box.dataset.animated = "true"), // Mark as animated
+          once: true, // Trigger only once
+          invalidateOnRefresh: true, // Recalculate on resize
         },
       });
 
