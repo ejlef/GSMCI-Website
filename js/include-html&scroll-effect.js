@@ -37,7 +37,7 @@
 // GSAP animation function
 function animateContent() {
   const contents = document.querySelectorAll(
-    ".disclosure, .permit-box, .about-us, .content-profile, .box-vmgc, .our-business, .content-business, .orgbox, .board-of-directors"
+    ".disclosure, .permit-box, .about-us, .content-profile, .box-vmgc, .our-business, .content-business, .org-pic, .board-of-directors"
   );
 
   contents.forEach((content) => {
@@ -56,8 +56,8 @@ function animateContent() {
           ease: "power3.Out",
           scrollTrigger: {
             trigger: content,
-            start: "top 70%",
-            end: "top 40%",
+            start: "top 90%",
+            end: "top 70%",
             toggleActions: "play none none reverse",
             scrub: false,
             markers: false,
