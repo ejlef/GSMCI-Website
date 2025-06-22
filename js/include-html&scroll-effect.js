@@ -34,7 +34,7 @@
   }
 })();
 
-const isDebug1 = true; // Set to true for debugging
+const isDebug1 = false; // Set to true for debugging
 
 // GSAP animation function
 function animateContent() {
