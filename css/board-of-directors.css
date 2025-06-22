@@ -25,6 +25,7 @@
 } */
 
 .box-img1 img {
+   display: block;
   background: white;
   width: 60%;
   height: auto;

@@ -6,7 +6,7 @@
   <h1>BOARD OF DIRECTORS</h1>
 </div>
 
-<div class="brdofdrk-box1">
+<div class="brdofdrk-box1" data-animated="false">
   <div class="box-img1">
     <img
       src="GSMCI-Pictures/Doctor's/RONELO P. BUÑOL.png"
@@ -35,7 +35,7 @@
   </div>
 </div>
 
-<div class="brdofdrk-box1">
+<div class="brdofdrk-box1" data-animated="false">
   <div class="box-img1 hdi1">
     <img
       src="GSMCI-Pictures/Doctor's/PUTLI JAHALLIA A. FUERTE.png"
@@ -71,7 +71,7 @@
   </div>
 </div>
 
-<div class="brdofdrk-box1">
+<div class="brdofdrk-box1" data-animated="false">
   <div class="box-img1">
     <img
       src="GSMCI-Pictures/Doctor's/STEPHANIE A. ABELLO.png"
@@ -98,7 +98,7 @@
   </div>
 </div>
 
-<div class="brdofdrk-box1">
+<div class="brdofdrk-box1" data-animated="false">
   <div class="box-img1 hdi1">
     <img
       src="GSMCI-Pictures/Doctor's/JENNIFER BUÑOL.png"
@@ -134,7 +134,7 @@
   </div>
 </div>
 
-<div class="brdofdrk-box1">
+<div class="brdofdrk-box1" data-animated="false">
   <div class="box-img1">
     <img
       src="GSMCI-Pictures/Doctor's/Dr. Sharon Zambarrano.png"
@@ -160,7 +160,7 @@
   </div>
 </div>
 
-<div class="brdofdrk-box1">
+<div class="brdofdrk-box1" data-animated="false">
   <div class="box-img1 hdi1">
     <img
       src="GSMCI-Pictures/Doctor's/Engr. Jungi R. Fuerte.png"
@@ -195,7 +195,7 @@
   </div>
 </div>
 
-<div class="brdofdrk-box1">
+<div class="brdofdrk-box1" data-animated="false">
   <div class="box-img1">
     <img
       src="GSMCI-Pictures/Doctor's/1709167476361.png"
@@ -220,7 +220,7 @@
   </div>
 </div>
 
-<div class="brdofdrk-box1">
+<div class="brdofdrk-box1" data-animated="false">
   <div class="box-img1 hdi1">
     <img
       src="GSMCI-Pictures/Doctor's/Rael A. Dullano.png"
@@ -317,59 +317,54 @@
 </script> -->
 
 <script>
+  const isDebug = false; // Set to true for debugging
+
   gsap.registerPlugin(ScrollTrigger);
 
-  // Optimized ScrollTrigger animations with a "data-animated" flag
+  // Optimized ScrollTrigger animations
   gsap.utils.toArray(".brdofdrk-box1").forEach((box) => {
-    const img = box.querySelector(".box-img1:not(.hdi2)"); // Exclude .hdi2
-    const hdi2 = box.querySelector(".box-img1.hdi2"); // Target .hdi2
+    const img = box.querySelector(".box-img1:not(.hdi2)");
+    const hdi2 = box.querySelector(".box-img1.hdi2");
     const detail = box.querySelector(".details1");
 
-    // Skip animation if the content is already animated
+    // Skip if already animated
     if (box.dataset.animated === "true") return;
 
-    if (img || hdi2 || detail) {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: box,
-          start: "top 40%",
-          end: "top 10%",
-          toggleActions: "play none none reverse",
-          markers: false, // Set to true for debugging
-          onEnter: () => (box.dataset.animated = "true"), // Mark as animated
-          once: true, // Trigger only once
-          invalidateOnRefresh: true, // Recalculate on resize
-        },
-      });
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: box,
+        start: "top 40%",
+        end: "top 10%",
+        toggleActions: "play none none reverse",
+        markers: isDebug, // Debug markers controlled by isDebug
+        onEnter: () => (box.dataset.animated = "true"), // Mark as animated
+        once: true, // Trigger only once
+        invalidateOnRefresh: true, // Recalculate on resize
+      },
+    });
 
-      // Animate .box-img1 (except .hdi2)
-      if (img) {
-        tl.fromTo(
-          img,
-          { y: 50, opacity: 0 },
-          { y: 0, opacity: 1, duration: 1, ease: "power2.out" }
-        );
-      }
-
-      // Animate .box-img1.hdi2
-      if (hdi2) {
-        tl.fromTo(
-          hdi2,
-          { y: 50, opacity: 0 },
-          { y: 0, opacity: 1, duration: 1, ease: "power2.out" },
-          "-=0.4" // Overlap with previous animation
-        );
-      }
-
-      // Animate .details1
-      if (detail) {
-        tl.fromTo(
-          detail,
-          { y: 50, opacity: 0 },
-          { y: 0, opacity: 1, duration: 1, ease: "power2.out" },
-          "-=0.4" // Overlap with previous animation
-        );
-      }
+    if (img) {
+      tl.fromTo(
+        img,
+        { y: 50, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1, ease: "power2.out" }
+      );
+    }
+    if (hdi2) {
+      tl.fromTo(
+        hdi2,
+        { y: 50, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1, ease: "power2.out" },
+        "-=0.4"
+      );
+    }
+    if (detail) {
+      tl.fromTo(
+        detail,
+        { y: 50, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1, ease: "power2.out" },
+        "-=0.4"
+      );
     }
   });
 </script>

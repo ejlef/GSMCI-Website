@@ -34,10 +34,12 @@
   }
 })();
 
+const isDebug1 = true; // Set to true for debugging
+
 // GSAP animation function
 function animateContent() {
   const contents = document.querySelectorAll(
-    ".disclosure, .permit-box, .about-us, .content-profile, .box-vmgc, .our-business, .content-business, .org-pic, .board-of-directors"
+    ".disclosure, .permit-box, .about-us, .content-profile, .box-vmgc, .our-business, .content-business, .orgbox, .board-of-directors"
   );
 
   contents.forEach((content) => {
@@ -56,11 +58,11 @@ function animateContent() {
           ease: "power3.Out",
           scrollTrigger: {
             trigger: content,
-            start: "top 90%",
-            end: "top 70%",
+            start: "top 85%",
+            end: "top 50%",
             toggleActions: "play none none reverse",
             // scrub: false,
-            markers: false,
+            markers: isDebug1,
             once: true,
           },
         }
