@@ -263,59 +263,7 @@
   async
 ></script>
 
-<!-- <script>
-  gsap.registerPlugin(ScrollTrigger);
-
-  // Batch animations for better performance
-  gsap.utils.toArray(".brdofdrk-box1").forEach((box) => {
-    const img = box.querySelector(".box-img1:not(.hdi2)"); // Exclude .hdi2
-    const hdi2 = box.querySelector(".box-img1.hdi2"); // Target .hdi2
-    const detail = box.querySelector(".details1");
-
-    if (img || hdi2 || detail) {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: box,
-          start: "top 40%",
-          end: "top 10%",
-          toggleActions: "play none none reverse",
-          markers: false, // Set to true for debugging
-          once: true,
-        },
-      });
-
-      // Animate .box-img1 (except .hdi2)
-      if (img) {
-        tl.fromTo(
-          img,
-          { y: 50, opacity: 0 },
-          { y: 0, opacity: 1, duration: 1, ease: "power2.out" }
-        );
-      }
-
-      // Animate .box-img1.hdi2
-      if (hdi2) {
-        tl.fromTo(
-          hdi2,
-          { y: 50, opacity: 0 },
-          { y: 0, opacity: 1, duration: 1, ease: "power2.out" },
-          "-=0.4" // Overlap with previous animation
-        );
-      }
-
-      // Animate .details1
-      if (detail) {
-        tl.fromTo(
-          detail,
-          { y: 50, opacity: 0 },
-          { y: 0, opacity: 1, duration: 1, ease: "power2.out" },
-          "-=0.4" // Overlap with previous animation
-        );
-      }
-    }
-  });
-</script> -->
-
+<!-- 
 <script>
   const isDebug = false; // Set to true for debugging
 
@@ -366,5 +314,69 @@
         "-=0.4"
       );
     }
+  });
+</script> -->
+
+<script>
+  // Function to animate elements with a fade-in effect
+  function animateElement(element, options = {}) {
+    const { duration = 1, delay = 0, easing = "ease-out" } = options;
+
+    element.style.transition = `all ${duration}s ${easing} ${delay}s`;
+    element.style.opacity = "1";
+    element.style.transform = "translateY(0)";
+  }
+
+  // Initialize IntersectionObserver
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const box = entry.target;
+
+          // Skip if already animated
+          if (box.dataset.animated === "true") return;
+
+          box.dataset.animated = "true"; // Mark as animated
+
+          const img = box.querySelector(".box-img1:not(.hdi2)");
+          const hdi2 = box.querySelector(".box-img1.hdi2");
+          const detail = box.querySelector(".details1");
+
+          // Animate elements in a defined sequence
+          if (img) animateElement(img, { duration: 1, easing: "ease-out" });
+          if (hdi2)
+            setTimeout(() => {
+              animateElement(hdi2, { duration: 1, easing: "ease-out" });
+            }, 400); // Delay the animation of hdi2
+
+          if (detail)
+            setTimeout(() => {
+              animateElement(detail, { duration: 1.5, easing: "ease-out" });
+            }, 800); // Delay the animation of details1
+
+          // Unobserve the box if the animation should trigger only once
+          observer.unobserve(box);
+        }
+      });
+    },
+    {
+      threshold: 0.4, // Trigger when 40% of the element is visible
+    }
+  );
+
+  // Apply the observer to all .brdofdrk-box1 elements
+  document.querySelectorAll(".brdofdrk-box1").forEach((box) => {
+    // Set initial styles for animation
+    const elementsToAnimate = box.querySelectorAll(
+      ".box-img1:not(.hdi2), .box-img1.hdi2, .details1"
+    );
+    elementsToAnimate.forEach((el) => {
+      el.style.opacity = "0";
+      el.style.transform = "translateY(100px)";
+    });
+
+    // Observe the box
+    observer.observe(box);
   });
 </script>
