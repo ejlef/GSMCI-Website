@@ -4,7 +4,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 5%;
+    /* gap: 5%; */
     padding: 0 15.5vw 5vh 15.5vw;
   }
 
@@ -14,7 +14,7 @@
   }
 
   .dtr-p {
-    font-size: 1.7vw;
+    font-size: 1.5vw;
   }
 
   .doctor-name {
@@ -29,7 +29,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: center;
+    align-content: flex-end;
     justify-content: center;
   }
 
@@ -39,7 +39,10 @@
   }
 
   .img-box1 div {
-    background-color: lightgray;
+    width: 75%;
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: lightgray; */
   }
   .bodi-dctrs {
     visibility: hidden;
@@ -89,6 +92,14 @@
 
     .imgdrctrs-box img {
       height: auto;
+    }
+
+    .img-box1 div {
+      width: 100%;
+    }
+
+    .img-box1 {
+      align-content: center;
     }
   }
 
