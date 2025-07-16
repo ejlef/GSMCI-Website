@@ -11,10 +11,11 @@
 .gsmcivideo {
   aspect-ratio: 560 / 314;
   width: 100%;
-  max-width: 600px;
+  max-width: 630px;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
+  box-shadow: 3px 3px 6px 1px #b1b1b1;
 }
 
 .gsmcivideo iframe {
