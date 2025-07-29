@@ -11,7 +11,7 @@
 .gsmcivideo {
   aspect-ratio: 560 / 314;
   width: 100%;
-  max-width: 630px;
+  max-width: 50%;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
@@ -135,6 +135,10 @@
     font-size: 3vw;
   }
 
+  .gsmcivideo {
+    max-width: 630px;
+  }
+
   .content-profile p {
     padding: 2vh 15vw 5vh 16.5vw;
     font-size: 1.5vw;
@@ -209,6 +213,10 @@
 }
 
 @media (max-width: 425px) {
+  .gsmcivideo {
+    max-width: 100%;
+  }
+  
   .box-vmgc h2 {
     font-size: 6.5vw;
   }
