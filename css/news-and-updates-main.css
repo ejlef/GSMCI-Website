@@ -97,12 +97,34 @@ body {
 
 .box1 {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  transition: all 0.5s ease;
+  border: solid 1px black;
+}
+
+.box-1 {
+  width: 100%;
+  padding: 5%;
 }
 
 .box-1 img {
   width: 100%;
+  box-shadow: 2px 2px 5px 0px #aaaaaa;
+}
+
+.abt a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1%;
+  text-decoration: none;
+  color: green;
+}
+
+.fa-arrow-circle-right:hover ~ .rdmr {
+  text-decoration: underline;
+  text-decoration-color: darkgreen;
 }
 
 .oopc1 {
@@ -349,6 +371,10 @@ body {
   .nt1 {
     font-size: 4vw;
   }
+
+  .box1 {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 426px) {
@@ -363,12 +389,5 @@ body {
 
   .btn-11 {
     font-size: 0.9rem;
-  }
-
-  .hd1 {
-    display: block;
-  }
-  .hd2 {
-    display: none;
   }
 }
