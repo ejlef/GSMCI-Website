@@ -122,7 +122,25 @@ body {
   color: green;
 }
 
+.fa-arrow-circle-right {
+  color: darkgreen !important;
+}
+
+.fa-arrow-circle-right:hover {
+  transition: transform 0.6s ease;
+  transform: scale(1.1);
+}
+
 .fa-arrow-circle-right:hover ~ .rdmr {
+  text-decoration: underline;
+  text-decoration-color: darkgreen;
+}
+
+.rdmr {
+  color: #435949 !important;
+}
+
+.rdmr:hover {
   text-decoration: underline;
   text-decoration-color: darkgreen;
 }
