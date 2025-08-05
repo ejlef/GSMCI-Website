@@ -33,7 +33,7 @@ body {
   background-color: white !important;
   background: url("../logo-load.gif") center no-repeat;
   background-size: contain;
-  z-index: 99999;
+  z-index: 99999999999;
 }
 
 /* Disable scrolling when loading */
