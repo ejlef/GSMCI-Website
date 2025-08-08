@@ -118,7 +118,7 @@ ul.dropdown-menu.drp1.show a {
 .sidepanel {
   width: 0;
   position: fixed;
-  z-index: 999;
+  z-index: 9999999999;
   margin-top: -1%;
   right: 0;
   background-color: #000000e0;
