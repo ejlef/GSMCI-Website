@@ -53,6 +53,12 @@
 }
 
 /* Vision, Mission, Goals, Core Values */
+
+ ul li::marker {
+  color: #0b517d; /* bullet only */
+}
+
+
 .corevalues-box {
   display: flex;
   flex-direction: column;
