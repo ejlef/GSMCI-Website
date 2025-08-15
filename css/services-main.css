@@ -15,7 +15,7 @@
 
 /* General body styling */
 body {
-   background: conic-gradient(from 46deg, #18c5ff2b, #fdfdfd00, #64ffbe21);
+  background: conic-gradient(from 46deg, #18c5ff2b, #fdfdfd00, #64ffbe21);
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
@@ -23,7 +23,7 @@ body {
 
 /* Title Section */
 .services-title {
-  margin: 3%;
+  /* margin: 3%; */
   text-align: center;
 }
 
@@ -41,6 +41,11 @@ body {
   margin-bottom: 3%;
 }
 
+.kunsulta-text {
+  font-size: 1.7vw;
+  text-align: justify;
+}
+
 /* Services Layout */
 .first-services {
   display: flex;
@@ -52,7 +57,7 @@ body {
 
 .holder-services {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
   width: 100%;
   padding: 0.5rem;
@@ -89,6 +94,22 @@ body {
   line-height: 1.4;
 }
 
+.konsulta-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 5%;
+  gap: 3%;
+}
+
+.fb-page-ekonsulta {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0px 0px 20px #ccc;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
   .rsvsc {
@@ -98,6 +119,8 @@ body {
   .lsevrydpt {
     font-size: 0.9rem;
   }
+
+
 }
 
 @media (max-width: 768px) {
@@ -107,6 +130,16 @@ body {
 
   .lsevrydpt {
     font-size: 0.875rem;
+  }
+
+  .kunsulta-text {
+    margin-top: 5%;
+    font-size: 1.2rem;
+  }
+
+  .konsulta-box {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -119,11 +152,20 @@ body {
     font-size: 0.8rem;
   }
 
+    .kunsulta-text {
+    font-size: 0.9rem;
+  }
+
   .serbox-1 {
     padding: 0.75rem;
   }
-}
 
+  .holder-services {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}
+/* 
 @media (max-width: 320px) {
   .rsvsc {
     font-size: 1.5rem;
@@ -133,13 +175,17 @@ body {
     font-size: 0.75rem;
   }
 
+  .kunsulta-text {
+    font-size: 0.75rem;
+  }
+
   .serbox-1 {
     padding: 0.5rem;
     font-size: 0.8rem;
   }
 
   .holder-services {
-    grid-template-columns: 1fr; /* Single-column layout */
+    grid-template-columns: 1fr;
     gap: 0.5rem;
   }
 
@@ -151,4 +197,4 @@ body {
   .holder-services p {
     font-size: 0.75rem;
   }
-}
+} */

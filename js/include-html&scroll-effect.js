@@ -39,7 +39,7 @@ const isDebug1 = false; // Set to true for debugging
 // GSAP animation function
 function animateContent() {
   const contents = document.querySelectorAll(
-    ".disclosure, .permit-box, .about-us, .gsmcivideo , .content-profile, .box-vmgc, .our-business, .content-business, .board-of-directors"
+    ".mainprmt-box, .about-us, .gsmcivideo , .content-profile, .box-vmgc, .our-business, .content-business, .board-of-directors"
   );
 
   contents.forEach((content) => {

@@ -6,6 +6,10 @@
   font-weight: bold;
 }
 
+@font-face {
+  font-family: "AppleGaramond";
+  src: url("../apple_garamond-font/AppleGaramond.ttf") format("truetype");
+}
 /* General reset */
 * {
   margin: 0;
@@ -257,6 +261,7 @@ body.no-scroll {
 }
 
 .i-n-txt {
+  font-family: "AppleGaramond";
   color: black !important;
   width: 100%;
 }
@@ -267,6 +272,14 @@ body.no-scroll {
 }
 
 /* disclosure start */
+
+.text-justify {
+  text-align: justify;
+}
+
+.sec2024 {
+  font-size: 1em;
+}
 
 .disclosure .scencm {
   text-align: center;
@@ -280,6 +293,16 @@ body.no-scroll {
   text-align: center;
   margin-bottom: 0%;
   font-size: 1.5vw;
+}
+
+.mainprmt-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 5%;
+  gap: 2%;
 }
 
 .permit-box {
@@ -405,10 +428,11 @@ img.loaded {
 
 @media (max-width: 1025px) {
   .disclosure .scencm {
-    font-size: 4vw;
+    font-size: 3vw;
   }
+
   .scfrm {
-    font-size: 3.5vw;
+    font-size: 2.5vw;
   }
 }
 
@@ -453,12 +477,21 @@ img.loaded {
     font-size: 3.5vw;
   }
 
+  .disclosure .scencm {
+    font-size: 4vw;
+  }
+
+  .mainprmt-box {
+    flex-wrap: wrap;
+  }
+
   .content1 {
-    margin: 25vh 0 20vh 0;
+    margin: 25vh 0 25vh 0;
   }
 
   .permit-img {
     max-height: 60vw;
+    width: 50vw;
   }
 
   .org-pic {
@@ -492,9 +525,9 @@ img.loaded {
     font-size: 4vw;
   }
 
-  .disclosure {
+  /* .disclosure {
     margin: 8%;
-  }
+  } */
 
   .disclosure .scencm {
     font-size: 5vw;
@@ -504,9 +537,9 @@ img.loaded {
     font-size: 4vw;
   }
 
-  .permit-box {
-    margin: 8%;
-  }
+  /* .permit-box {
+    margin: 0 !important;
+  } */
 
   .img1 {
     max-height: 250px;

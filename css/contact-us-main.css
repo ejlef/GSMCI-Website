@@ -32,15 +32,20 @@ body {
   display: flex;
   /* justify-content: center;
   align-items: center; */
-  gap: 5%;
-  margin: 0 6.5%;
+  /* gap: 5%; */
+  /* margin: 0 6.5%; */
+}
+
+.fab {
+  font-size: 1em !important;
 }
 
 .box-10 {
   display: flex;
-  margin: 2%;
-  /* align-items: center; */
+  padding: 3% 2% 2% 5%;
+  align-items: center;
   flex-direction: column;
+  width: 100%;
 }
 
 .box-10 div {
@@ -50,10 +55,10 @@ body {
   flex: 1 1 300px;
 }
 
-.box-10 i {
+/* .box-10 i {
   font-size: 1.5em;
   color: #000;
-}
+} */
 
 .box-10 p {
   font-size: 1em;
@@ -70,9 +75,9 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  max-width: 600px;
+  /* max-width: 600px; */
   margin: 0 auto;
-  padding: 10% 0 2% 0;
+  /* padding: 10% 0 2% 0; */
 }
 
 .map-container {
@@ -99,6 +104,23 @@ body {
   margin-right: 10px;
   font-size: 4em;
 } */
+
+.map-responsive {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  margin: 5%; /* Add space around the map */
+}
+
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 
 .gm {
   color: green;
@@ -142,6 +164,10 @@ body {
     flex-direction: column;
   }
 
+  .map {
+    padding: 5%;
+  }
+
   /* .gm {
     font-size: 8vw;
   } */
@@ -160,6 +186,11 @@ body {
   .box-10 iframe {
     box-shadow: 0px 1.5px 4px #6e6e6e;
   }
+
+  .hd {
+    align-items: flex-start;
+  }
+
   .gm {
     font-size: 8.5vw;
   }

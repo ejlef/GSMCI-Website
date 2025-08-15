@@ -1,3 +1,4 @@
+
 .about-us {
   text-align: center;
 }
@@ -142,7 +143,7 @@
   }
 
   .gsmcivideo {
-    max-width: 630px;
+    max-width: 1000px;
   }
 
   .content-profile p {
@@ -174,6 +175,10 @@
   .content-profile p {
     padding: 2vh 15vw 5vh 16.5vw;
   }
+
+   .gsmcivideo {
+    max-width: 630px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -187,8 +192,9 @@
     padding: 5%;
   }
 
+
   .fa-arrow-circle-right {
-    font-size: 7vw;
+    font-size: 4vw;
   }
 
   .about-us h1 {
@@ -221,6 +227,10 @@
 @media (max-width: 425px) {
   .gsmcivideo {
     max-width: 100%;
+  }
+
+  .fa-arrow-circle-right {
+    font-size: 5.5vw;
   }
   
   .box-vmgc h2 {
