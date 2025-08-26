@@ -231,9 +231,9 @@ body.no-scroll {
   opacity: 0; */
 }
 
-/* .i-n {
-  width: 500px;
-} */
+.i-n {
+  padding: 0.5%;
+}
 
 .i-n a {
   display: flex;
