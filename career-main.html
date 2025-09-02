@@ -20,6 +20,7 @@
       type="image/x-icon"
     />
     <link href="css/header&drawer-menu.css" rel="stylesheet" />
+    <link href="css/carrer-main.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -35,73 +36,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <style>
-      body {
-        background: conic-gradient(from 46deg, #18c5ff2b, #fdfdfd00, #64ffbe21);
-      }
-      @font-face {
-        font-family: "AppleGaramond-Bold";
-        src: url("apple_garamond-font/AppleGaramond-Bold.ttf")
-          format("truetype");
-        font-weight: bold;
-      }
-      .content-1 {
-        display: flex;
-        justify-content: center;
-        padding: 1% 5%;
-      }
-
-      .content-1 img {
-        width: 40%;
-      }
-
-      .ec {
-        margin-top: 1%;
-        text-align: center;
-        font-family: "AppleGaramond-Bold";
-        color: darkgreen;
-      }
-
-      .cnt {
-        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-      }
-
-      /* Responsive Design */
-      @media (max-width: 2561px) {
-        .ec {
-          font-size: 3vw;
-        }
-        .cnt {
-          font-size: 2.3vw;
-        }
-      }
-
-      @media (max-width: 1024px) {
-        .content-1 img {
-          width: 60%;
-        }
-
-        .ec {
-          font-size: 5vw;
-        }
-        .cnt {
-          font-size: 3.5vw;
-        }
-      }
-
-      @media (max-width: 426px) {
-        .content-1 img {
-          width: 100%;
-        }
-
-        .ec {
-          font-size: 8vw;
-        }
-        .cnt {
-          font-size: 4vw;
-        }
-      }
-    </style>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v23.0"
+    ></script>
   </head>
 
   <body class="animate__animated animate__fadeIn" id="home">
@@ -273,20 +213,54 @@
     </div>
     <!-- Mobile Navigation End -->
     <p class="ec">EXPLORE CAREER</p>
-    <div class="content-1">
-      <img
-        src="GSMCI-Pictures/hiring.jpg"
-        alt="hiring"
-        class="lazyload blur-up"
-        data-src="GSMCI-Pictures/hiring.jpg"
-        loading="eager"
-      />
-      <!-- <div class="cnt">
-        Uncover exciting opportunities and unlock <br />your potential with
-        us.Join us and be a part <br />of a team that values innovation,
-        dedication,<br />
-        and professional development.
-      </div> -->
+
+    <div class="Carrer-box">
+      <div class="gsmcifb-box">
+        <div id="fb-root" style="display: none"></div>
+        <div class="fb-page-gsmci">
+          <div
+            class="fb-page w-100"
+            data-href="https://www.facebook.com/gsmciguimaras"
+            data-tabs="timeline"
+            data-width="500"
+            data-height=""
+            data-small-header="false"
+            data-adapt-container-width="true"
+            data-hide-cover="false"
+            data-show-facepile="true"
+          >
+            <blockquote
+              cite="https://www.facebook.com/gsmciguimaras"
+              class="fb-xfbml-parse-ignore"
+            >
+              <a href="https://www.facebook.com/gsmciguimaras"
+                >Guimaras Specialist Medical Center, Inc.</a
+              >
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="w-100">
+          <h2 class="mt-3 mb-2">We're Hiring!</h2>
+          <p>
+            Join the Guimaras Specialist Medical Center, Inc. team and make a
+            difference in healthcare. We are looking for passionate and
+            dedicated professionals to be part of our growing family. If you are
+            committed to excellence and compassionate service, we invite you to
+            explore our career opportunities.
+          </p>
+          <p>
+            <strong>How to Apply:</strong><br />
+            Send your updated resume and cover letter to
+            <a href="mailto:gsmcihr2024@gmail.com">gsmcihr2024@gmail.com</a> or
+            visit our hospital for more details.
+          </p>
+          <p>
+            Be part of our mission to provide quality healthcare to the
+            community!
+          </p>
+        </div>
+      </div>
     </div>
 
     <div include-html="line.html"></div>

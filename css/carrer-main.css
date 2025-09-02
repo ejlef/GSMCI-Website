@@ -1,0 +1,119 @@
+body {
+  background: conic-gradient(from 46deg, #18c5ff2b, #fdfdfd00, #64ffbe21);
+}
+@font-face {
+  font-family: "AppleGaramond-Bold";
+  src: url("/apple_garamond-font/AppleGaramond-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+/* Responsive selection start */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Typography: fluid, accessible sizing */
+.ec {
+  font-family: "AppleGaramond-Bold";
+  font-weight: 700;
+  color: darkgreen;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  /* fluid font size between 1.1rem and 3rem (scales with viewport) */
+  font-size: clamp(1.1rem, 3.2vw, 3rem);
+  line-height: 1.1;
+}
+
+/* Container: centers content and limits max width */
+.Carrer-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(0.75rem, 2.5vw, 2rem);
+}
+
+/* Flex row that wraps on small screens */
+.gsmcifb-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; /* don't wrap by default (laptop and up) */
+  padding: clamp(0.75rem, 3.5vw, 5%);
+  gap: clamp(0.5rem, 2vw, 2rem);
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Card / iframe placeholder: responsive sizing */
+.fb-page-gsmci {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex: 1 1 320px; */
+  width: 100%;
+  max-width: 500px;
+  min-width: 260px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  background: #fff;
+  overflow: hidden;
+}
+
+/* Responsive image */
+.career-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
+  max-width: 100%;
+}
+
+/* Breakpoints for extra fine tuning */
+@media (max-width: 1024px) {
+  .ec {
+    /* slightly larger on medium screens if needed */
+    font-size: clamp(1.25rem, 4.5vw, 2.25rem);
+  }
+  .fb-page-gsmci {
+    max-width: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gsmcifb-box {
+    flex-wrap: wrap; /* wrap on tablets and below */
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .Carrer-box {
+    padding: 1rem;
+  }
+  .fb-page-gsmci {
+    flex: 1 1 100%;
+    min-width: 0;
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ec {
+    font-size: clamp(1rem, 5.5vw, 1.5rem);
+  }
+  .gsmcifb-box {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0.75rem;
+  }
+  .fb-page-gsmci {
+    box-shadow: none;
+    border-radius: 6px;
+  }
+}
+/* Responsive selection end */
