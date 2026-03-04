@@ -203,6 +203,16 @@ body.no-scroll {
   mix-blend-mode: multiply;
   z-index: -999;
   overflow: hidden;
+  animation: fadeSwitch 2s ease-in-out;
+}
+
+@keyframes fadeSwitch {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .cnt1 {
