@@ -444,18 +444,23 @@
         img.onload = () => content1.classList.add("loaded");
         img.onerror = () => console.error("Image failed to load");
       });
-
       window.addEventListener("load", function () {
-        // Wait until browser is completely idle
         setTimeout(function () {
-          // ONLY HERE the GIF request starts
-          const element = document.querySelector(".content1");
+          const gif = new Image();
+          gif.src = "GSMCI-Pictures/img/LANDING PAGE IMAGE.gif";
 
-          element.style.setProperty(
-            "--bg-image",
-            "url('GSMCI-Pictures/img/LANDING PAGE IMAGE.gif')",
-          );
-        }, 8000); // 8 seconds after full load
+          gif.onload = function () {
+            const style = document.createElement("style");
+            style.innerHTML = `
+        .content1.loaded::after {
+          background: url("${gif.src}") no-repeat center center;
+          background-size: cover;
+          mix-blend-mode: multiply;
+        }
+      `;
+            document.head.appendChild(style);
+          };
+        }, 8000);
       });
     </script>
   </body>
