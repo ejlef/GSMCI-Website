@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -448,13 +448,15 @@
       window.addEventListener("load", () => {
         const images = [
           "GSMCI-Pictures/img/LANDING PAGE IMAGE1.jpg",
-          "GSMCI-Pictures/img/LANDING PAGE IMAGE.jpg",
+          "GSMCI-Pictures/img/LANDING PAGE IMAGE2.jpg",
+          "GSMCI-Pictures/img/LANDING PAGE IMAGE3.jpg",
         ];
-
         let index = 0;
 
+        // Preload images
         images.forEach((src) => (new Image().src = src));
 
+        // Initial pseudo-element style
         const style = document.createElement("style");
         style.id = "bg-style";
         style.innerHTML = `
@@ -472,22 +474,25 @@
   `;
         document.head.appendChild(style);
 
-        setInterval(() => {
-          index = (index + 1) % images.length;
-          style.innerHTML = `
-      .content1.loaded::after {
-        content: "";
-        position: absolute;
-        top: 0; left: 0; width: 100%; height: 100%;
-        background: url("${images[index]}") no-repeat center center;
-        background-size: cover;
-        mix-blend-mode: multiply;
-        opacity: 1;
-        transition: background 0.5s ease-in-out;
-        pointer-events: none;
-      }
-    `;
-        }, 1000);
+        // Delay before starting the slideshow (e.g., 3.5 seconds)
+        setTimeout(() => {
+          setInterval(() => {
+            index = (index + 1) % images.length;
+            style.innerHTML = `
+        .content1.loaded::after {
+          content: "";
+          position: absolute;
+          top: 0; left: 0; width: 100%; height: 100%;
+          background: url("${images[index]}") no-repeat center center;
+          background-size: cover;
+          mix-blend-mode: multiply;
+          opacity: 1;
+          transition: background 0.5s ease-in-out;
+          pointer-events: none;
+        }
+      `;
+          }, 1000);
+        }, 3500); // 3500ms delay before starting
       });
     </script>
   </body>
