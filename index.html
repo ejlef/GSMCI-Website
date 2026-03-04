@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -447,15 +447,15 @@
 
       window.addEventListener("load", () => {
         const images = [
+          "GSMCI-Pictures/img/LANDING PAGE IMAGE.jpg",
           "GSMCI-Pictures/img/LANDING PAGE IMAGE1.jpg",
-          "GSMCI-Pictures/img/LANDING PAGE IMAGE.jpg"
         ];
         let index = 0;
 
         // Preload images
         images.forEach((src) => (new Image().src = src));
 
-        // Initial pseudo-element style
+        // Set initial background (first image)
         const style = document.createElement("style");
         style.id = "bg-style";
         style.innerHTML = `
@@ -473,10 +473,10 @@
   `;
         document.head.appendChild(style);
 
-        // Delay before starting the slideshow (e.g., 3.5 seconds)
+        // Start slideshow after delay (e.g., 3.5 seconds)
         setTimeout(() => {
+          index = 1; // start from the second image
           setInterval(() => {
-            index = (index + 1) % images.length;
             style.innerHTML = `
         .content1.loaded::after {
           content: "";
@@ -490,8 +490,9 @@
           pointer-events: none;
         }
       `;
+            index = (index + 1) % images.length;
           }, 1000);
-        }, 3500); // 3500ms delay before starting
+        }, 3500); // delay before starting
       });
     </script>
   </body>
