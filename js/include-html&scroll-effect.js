@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 (async function () {
   const elements = document.querySelectorAll("[include-html]");
   for (const el of elements) {
@@ -36,10 +38,9 @@
 
 const isDebug1 = false; // Set to true for debugging
 
-// GSAP animation function
 function animateContent() {
   const contents = document.querySelectorAll(
-    ".mainprmt-box, .about-us, .gsmcivideo , .content-profile, .box-vmgc, .our-business, .content-business, .board-of-directors"
+    ".mainprmt-box, .about-us, .gsmcivideo , .content-profile, .box-vmgc, .our-business, .content-business, .board-of-directors",
   );
 
   contents.forEach((content) => {
@@ -58,18 +59,28 @@ function animateContent() {
           ease: "power3.Out",
           scrollTrigger: {
             trigger: content,
-            start: "top 85%",
-            end: "top 50%",
+            start: "top 75%",
+            end: "top 40%",
             toggleActions: "play none none reverse",
-            // scrub: false,
+            // scrub: 1,
             markers: isDebug1,
             once: true,
           },
-        }
+        },
       );
     }
   });
 }
+
+gsap.to(".cnt1", {
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".content1",
+    start: "top top",
+    end: "bottom top",
+    scrub: 1,
+  },
+});
 
 // // GSAP animation function2
 // function animateContent1() {

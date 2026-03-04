@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="author" content="Felje Menor" />
     <meta
       name="copyright"
-      content="Copyright © 2025 Felje Menor. All rights reserved."
+      content="Copyright © 2026 Guimaras Specialist Medical Center, Inc. All rights reserved."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -15,9 +15,9 @@
     <title>Guimaras Specialist Medical Center, Inc.</title>
     <!-- Favicon -->
     <link
-      href="GSMCI-Pictures/Logos/GSMCI Logo low.ico"
+      href="GSMCI-Pictures/Logos/GSMCI Logo low.png"
       rel="icon"
-      type="image/x-icon"
+      type="image/png"
     />
 
     <link rel="preload" href="css/header&drawer-menu.css" as="style" />
@@ -54,8 +54,11 @@
         "@context": "https://schema.org",
         "@type": "Hospital",
         "name": "Guimaras Specialist Medical Center, Inc.",
+        "alternateName": "GSMCI",
         "url": "https://gsmci.com",
-        "logo": "https://gsmci.com/GSMCI-Pictures/Logos/GSMCI%20Logo%20Low.ico",
+        "logo": "https://gsmci.com/GSMCI-Pictures/Logos/GSMCI%20Logo%20Low.png",
+        "image": "https://gsmci.com/GSMCI-Pictures/img/LANDING-PAGE-IMAGE.jpg",
+        "description": "Leading SEC-registered healthcare provider in Guimaras offering specialized medical services, emergency care, and comprehensive healthcare solutions.",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Brgy. San Miguel",
@@ -64,15 +67,36 @@
           "postalCode": "5045",
           "addressCountry": "PH"
         },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "10.5909",
+          "longitude": "122.6354"
+        },
         "contactPoint": {
           "@type": "ContactPoint",
           "telephone": "+63-920-946-4217",
-          "contactType": "Customer Service"
+          "contactType": "Customer Service",
+          "availableLanguage": ["English", "Filipino"],
+          "areaServed": "PH"
         },
+        "openingHours": "Mo-Su 00:00-23:59",
+        "medicalSpecialty": [
+          "Emergency Medicine",
+          "Internal Medicine",
+          "Surgery",
+          "Pediatrics",
+          "Obstetrics and Gynecology"
+        ],
+        "acceptsReservations": true,
+        "priceRange": "$$",
+        "paymentAccepted": ["PhilHealth", "Cash", "HMO"],
+        "currenciesAccepted": "PHP",
+        "foundingDate": "2016",
         "sameAs": ["https://www.facebook.com/gsmciguimaras"]
       }
     </script>
 
+    <!-- <script src="https://cdn.chatsimple.ai/chat-bot-loader.js" defer></script> -->
     <!-- Elfsight AI Chatbot | GSMCI AI Chatbot -->
     <script
       src="https://static.elfsight.com/platform/platform.js"
@@ -234,7 +258,7 @@
             <span class="visually-hidden">Toggle Dropdown</span>
             <span>MORE</span>
           </a>
-          <ul class="dropdown-menu" id="dropdown-menu1">
+          <ul class="dropdown-menu" id="dropdown-menu2">
             <li><a class="item" href="contact-us-main.html">CONTACT US</a></li>
             <li><a class="item" href="career-main.html">CAREER</a></li>
             <li>
@@ -252,37 +276,39 @@
     <!-- Mobile Navigation End -->
 
     <!-- Chatbot Area -->
-    <!-- <div
+    <div
       class="elfsight-app-a54463d7-e386-44c9-8050-cc40dcb47604"
       data-elfsight-app-lazy
       style="position: fixed"
-    ></div> -->
+    ></div>
+
+    <!-- <chat-bot
+      platform_id="bb756eca-40aa-4652-8790-51ca78dbdb8e"
+      user_id="ade748a8-7982-41e9-92c1-eb37c50fc37b"
+      chatbot_id="a7bd9d2a-9c8f-4b8b-ac47-ac32da2ab472"
+      ><a
+        href="https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral"
+        >chatsimple</a
+      ></chat-bot
+    > -->
 
     <!-- Floating PhilHealth Ad -->
     <div class="phil-ad" id="philAd">
-      <button
-        class="phil-close"
-        onclick="document.getElementById('philAd').style.display='none'"
-      >
-        &times;
-      </button>
-      <div class="phil-logo">
+      <div class="phil-logo" id="philLogo" onclick="togglePhilAd()">
         <img
           src="https://cms-cdn.e.gov.ph/Philhealth/uploads/images_PhilHealth_Logo.png"
           alt="PhilHealth Logo"
         />
       </div>
-      <div class="phil-text">
-        <h4>PhilHealth Benefits</h4>
-        <p>
-          Avail your benefits today. <br />
-          Check your coverage now!
-        </p>
+      <div class="phil-content" id="philContent">
+        <div class="phil-text">
+          <h4>PhilHealth Benefits</h4>
+          <p>Avail your benefits today.<br />Check your coverage now!</p>
+        </div>
         <a
           class="phil-btn"
           href="services-main.html#PhilHealth-1"
           target="_blank"
-          onclick="window.location.assign('services-main.html#PhilHealth-1'); return false;"
           >Learn More</a
         >
       </div>
@@ -369,10 +395,7 @@
         loading="lazy"
       />
     </div>
-
     <!-- ORGANIZATIONAL CHART END -->
-
-    <chat-bot platform_id="bb756eca-40aa-4652-8790-51ca78dbdb8e" user_id="ade748a8-7982-41e9-92c1-eb37c50fc37b" chatbot_id="a7bd9d2a-9c8f-4b8b-ac47-ac32da2ab472"><a href="https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral">chatsimple</a></chat-bot><script src="https://cdn.chatsimple.ai/chat-bot-loader.js" defer></script>
 
     <div include-html="line.html"></div>
     <div class="bg-ob" include-html="board-of-directors.html"></div>
@@ -383,7 +406,6 @@
     <!-- Footer Section -->
     <div include-html="footer.html"></div>
 
-    
     <!-- script js -->
     <script src="js/header&drawer-menu.js"></script>
     <script src="js/include-html&scroll-effect.js"></script>
@@ -399,6 +421,16 @@
         });
       });
 
+      window.addEventListener("load", () => {
+        const ad = document.getElementById("philAd");
+        setTimeout(() => ad.classList.add("visible"), 500);
+      });
+
+      function togglePhilAd() {
+        const ad = document.getElementById("philAd");
+        ad.classList.toggle("minimized");
+      }
+
       document.querySelectorAll(".permit-img").forEach((img) => {
         img.onload = () => img.classList.add("loaded");
       });
@@ -412,7 +444,26 @@
         img.onload = () => content1.classList.add("loaded");
         img.onerror = () => console.error("Image failed to load");
       });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const gif = new Image();
+
+        // Change this to your GIF path
+        gif.src = "GSMCI-Pictures/img/LANDING PAGE IMAGE.gif";
+
+        gif.onload = function () {
+          // When GIF is fully loaded, change background
+          const style = document.createElement("style");
+          style.innerHTML = `
+        .content1.loaded::after {
+          background: url("${gif.src}") no-repeat center center;
+          background-size: cover;
+          mix-blend-mode: multiply;
+        }
+      `;
+          document.head.appendChild(style);
+        };
+      });
     </script>
-    
   </body>
 </html>

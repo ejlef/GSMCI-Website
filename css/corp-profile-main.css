@@ -52,7 +52,7 @@ body {
 }
 
 /* Vision, Mission, Goals, Core Values */
- ul li::marker {
+ul li::marker {
   color: #0b517d; /* bullet only */
 }
 
