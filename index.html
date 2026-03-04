@@ -445,24 +445,17 @@
         img.onerror = () => console.error("Image failed to load");
       });
 
-      document.addEventListener("DOMContentLoaded", function () {
-        const gif = new Image();
+      window.addEventListener("load", function () {
+        // Wait until browser is completely idle
+        setTimeout(function () {
+          // ONLY HERE the GIF request starts
+          const element = document.querySelector(".content1");
 
-        // Change this to your GIF path
-        gif.src = "GSMCI-Pictures/img/LANDING PAGE IMAGE.gif";
-
-        gif.onload = function () {
-          // When GIF is fully loaded, change background
-          const style = document.createElement("style");
-          style.innerHTML = `
-        .content1.loaded::after {
-          background: url("${gif.src}") no-repeat center center;
-          background-size: cover;
-          mix-blend-mode: multiply;
-        }
-      `;
-          document.head.appendChild(style);
-        };
+          element.style.setProperty(
+            "--bg-image",
+            "url('GSMCI-Pictures/img/LANDING PAGE IMAGE.gif')",
+          );
+        }, 8000); // 8 seconds after full load
       });
     </script>
   </body>
